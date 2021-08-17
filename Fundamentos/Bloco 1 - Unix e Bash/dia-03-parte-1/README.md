@@ -1,6 +1,6 @@
-### Dia 1 - Unix e Bash - Parte 1
+### Dia 3 - Unix e Bash - Parte 1
 
-O que aprendemos no 1º dia:
+O que aprendemos no dia 3:
 
 - Introdução ao Unix, Bash e Kernel;
 - Principais componentes do Unix;
