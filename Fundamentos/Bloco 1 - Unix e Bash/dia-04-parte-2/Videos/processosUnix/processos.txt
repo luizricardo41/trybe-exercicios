@@ -1,0 +1,10 @@
+ps - Lista de processos sendo executada no momento.
+sleep - Para o Terminal por um tempo pré-determinado.
+& - Deixa um processo em Background.
+Ctrl + Z - Suspende o processo.
+bg - Se enviar o comando bg, ele volta a executar o processo suspenso anteriormente.
+jobs - lista os processos sendo executados.
+fg - Retorna o processo suspenso em foreground. 
+Ctrl + C - Mata o processo que está em foreground.
+kill - Usado para matar o processo que está em Background, sendo necessário saber qual o número do processo na lista ou o PID desse processo.
+kill -9 - Quando o processo não deixa ser morto, é usado esse comando.

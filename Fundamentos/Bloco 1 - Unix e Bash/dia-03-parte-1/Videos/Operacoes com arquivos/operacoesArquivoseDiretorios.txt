@@ -1,0 +1,8 @@
+mv - Mover arquivos e diretórios.
+cp - Copia de arquivos e diretórios.
+rm - Remover arquivos.
+touch - criar arquivos.
+
+cat - Mostrar as informações do arquivo.
+rm -rf - Apagar diretórios e todo seu conteúdo.
+rmdir - Apaga um diretório vazio.

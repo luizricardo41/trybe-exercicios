@@ -1,0 +1,36 @@
+Principais comandos do Git:
+
+-git init - inicia o repositório git local, em nosso computador;
+-git status - ver o status do git;
+-git add - para adicionar os arquivos - git add 'nome-do-arquivo' ou git add .
+
+O git add . adiciona todos os itens que estão dentro do diretório atual, incluindo subdiretórios e arquivos.
+
+git commit -m "qual a ação dos arquivos, o que esse arquivo irá fazer no projeto"
+
+O git commit cria uma revisão com um número e comentário que será visto por todos.
+
+git log - mostra todas as informações de commit's feitos para aquele projeto.
+
+git rm nome-do-arquivo - Apagar o arquivo que não será utilizado. (Após a remoção do arquivo, é importante fazer um commit para manter atualizada as alterações feitas no Git)
+
+git log --diff-filter=D -- summary - Este comando irá trazer todos os commits que foram apagados, para que possamos retornar o arquivo se necessário.
+
+git checkout numero-do-commit-que-deseja-retornar~1 - Com este comando, o arquivo será 'ressucitado', volta a existir.
+
+git ignore - Serve para 'ignorar' arquivos que não se deseja adicionar para o git. 
+É necessário criar o arquivo .gitignore com o touch e editar o arquivo, inserindo nele o arquivo ou até mesmo a extensão de arquivos, utilizando o *. Ex.: *.txt.
+Após a criação e edição do arquivo, é necessário adicionar o arquivo .gitignore e fazer um commit do mesmo.
+
+É possivel ignorar um diretório inteiro se quiser, editando o arquivo .gitignore colocando o nome do diretório seguido de /.
+
+git remote origin e link criado pelo GitHub - Esse comando cria um vinculo entre o repositório local e o repositório remoto.
+
+git push -u origin master - enviar o arquivo para o GitHub. (A primeira vez que for enviado para o GitHub, utiliza-se o -u. Das outras vezes não é mais necessário).
+
+git clone 'link do repositório no GitHub' - clona todo o repositório do GitHub para o computador. 
+
+git fetch - Verificar se existe alguma alteração com minha Branch que está no repositório remoto.
+
+git pull - Verifica se tem uma alteração e faz um merge da branch remota para a branch local.
+

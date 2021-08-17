@@ -1,0 +1,17 @@
+find - comando utilizado para fazer pesquisas de diretórios e e arquivos, podendo usar os parametros name, size, date e type.
+
+find . -name "*txt" - lista todos os arquivos .txt.
+
+find . -type d - lista todos os diretórios.
+
+find . -type f - lista todos os arquivos.
+
+find ./teste -name exemplo* - Localizar tanto arquivos quanto diretórios que comecem por algum trecho.
+
+find ./teste -type f -name "exemplo*" - Localizar somente arquivos que comecem por algum trecho.
+
+find ./teste -type d -name "exemplo*" - Localizar somente diretórios que comecem por algum trecho.
+
+Comando history - O camndo history mostra todo o histórico de comandos executados no terminal.
+
+Comando echo - O comando echo é usado para exibir mensagens na tela ou em algum arquivo.

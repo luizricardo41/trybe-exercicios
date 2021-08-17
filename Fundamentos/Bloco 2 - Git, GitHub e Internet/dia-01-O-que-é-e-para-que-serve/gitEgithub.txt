@@ -1,0 +1,2 @@
+O Git é um sistema de controle de versão que permite o trabalho de mais de uma pessoa em um mesmo arquivo ou projeto e que provê ferramentas parroblemas que possam acontecer nesse tipo de situação.
+O GitHub é uma plataforma que utiliza o sistema do Git para o controle das versões de algum arquivo ou projeto.

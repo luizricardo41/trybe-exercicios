@@ -1,0 +1,29 @@
+Por meio do comando ls -l, o Terminal lista mais informações referentes aos nosso diretóivos.
+
+-rw-rw-r-- 1 luizricardo41 luizricardo41 98 ago 13 11:14 niveisDeAcessoUnix.txt
+
+Os caracteres iniciais do arquivo, representado na linha acima, referem-se as permissões e se dividem em 4 grupos.
+
+O primeiro caractere refere ao tipo, podendo ser '-' ou 'd', onde o '-' informa que ele é um arquivo e o 'd' informa que é um diretório.
+
+O segundo grupo é formado por 3 caracteres, que no exemplo acima são 'rw-'. Esse grupo refere-se ao usuário, e as letras dizem qual permisão o usuário ou dono do arquivo pode executar.
+r - read - O usuário é capaz de ler o arquivo.
+w - write - O usuário é capaz de modificar o arquivo.
+- - O usuário não é capaz de executar o arquivo. (De acordo com o exemplo usado acima).
+Caso o usuário pudesse executar esse arquivo, no lugar do hífen haveria um 'x', de execute.
+
+O terceiro grupo também é formado por 3 caracteres e diz respeito ao grupo de usuário que tem acesso ao arquivo e suas permissões seguem o mesmo modo do segundo grupo explicado acima.
+
+O quarto grupo também formado por 3 caracteres e se refere a outros usuários, também levando em consideração as regras de permissão dos outros grupos em relação as letras que o compõem.
+
+Atraves de um comando, é possivel fazer alterações nas permissões. 
+chmod - modifica as permissões para cada grupo.
+-u - grupo de usuário criador e dono do arquivo.
+-g - grupo dos "grupos".
+-o - grupo dos "outros".
+
+Para retirar permissões é preciso usar o caracter hifen (-) depois de uma das letras citadas acima. Ex.: chmod u-
+Para acrescentar permissões é utilizado o caractere mais (+) depois de uma das letras. Ex.: chmod u+
+
+Após a verificação para avaliar se quer tirar uma permissão ou, deve-se indicar qual permissão será retirada ou acrescentada. O 'r' para leitura do arquivo, o 'w' para modificação do arquivo e o 'x' para execução. 
+

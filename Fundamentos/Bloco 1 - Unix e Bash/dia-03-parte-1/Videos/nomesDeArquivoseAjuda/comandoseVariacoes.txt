@@ -1,0 +1,6 @@
+* - Coringa para buscas.
+? - Capaz de substituir um caracter na busca de arquivos e diretórios.
+Os nomes de arquivos e diretórios que contenham espaços precisam estar entre aspas simples.
+man - Comando que acessa o manual do comando.
+whatis - COmando que mostra o que o comando faz.
+apropos - Lista todos os comandos relativos ao comando pesquisado com ele.

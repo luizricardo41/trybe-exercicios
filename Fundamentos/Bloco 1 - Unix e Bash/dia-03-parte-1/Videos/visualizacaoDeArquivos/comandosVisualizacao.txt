@@ -1,0 +1,11 @@
+less - Mostra o conteúdo por paginas, dependendo do tamanho do arquivo.
+q - sair da visualização do less.
+head - Mostra as 10 primeiras linhas do arquivo.
+tail - Mostra as 10 ultimas linhas do arquivo.
+Se teclar o / dentro da visualização do less, é possivel pesquisar os valores dentro do arquivo.
+grep - Fazer buscas dentro do arquivo. (Tem variações devido case sensitive, -i).
+Com o grep é possivel pesquisar por trechos de frases, onde o valor buscado precisa estar entre aspas simples.
+Outra variação do grep é o -v, onde a busca traz todos os resultados que não estão na pesquisa.
+A variação -n traz o valor da linha onde o valor está no arquivo.
+A variação -c traz a quantidade de vezes que o valor buscado aparece no arquivo.
+wc - Word Count - Conta a quantidade de linhas, palavras e caracteres. Suas variações -w: número de palavras; -l: número de linhas; -c: número de caracteres.

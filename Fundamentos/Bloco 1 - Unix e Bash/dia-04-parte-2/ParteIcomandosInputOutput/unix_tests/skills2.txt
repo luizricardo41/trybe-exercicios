@@ -1,0 +1,9 @@
+Internet
+Unix
+Bash
+Kernel
+Boot
+Git
+Input
+Output
+Comando

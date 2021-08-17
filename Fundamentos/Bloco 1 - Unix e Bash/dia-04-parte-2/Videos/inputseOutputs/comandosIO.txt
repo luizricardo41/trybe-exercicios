@@ -1,0 +1,15 @@
+cat - Alem de imprimir na tela do terminal o conteúdo de um arquivo, o comando cat recebe uma 'input' (Entrada) do usuário.
+Ctrl D - Sai do arquivo e salva o conteúdo.
+> - O sinal de maior '>' atribui as entradas digitadas para um arquivo.
+>> - O sinal de maior repetido '>>' é capaz de editar um arquivo existente, acrescentando informações a este arquivo.
+O comando cat também pode juntar o conteúdo de dois arquivos em 1 só.
+Ex.: cat cores.txt frutas.txt > tudo.txt
+
+sort - O comando sort ordena os valores do arquivo, na visualização das outputs(Saidas). Não altera o arquivo visualizado.
+
+É possivel ordenar o conteudo de um arquivo e enviar a saida para um novo arquivo.
+Ex.: sort < cores.txt > coresOrdenadas.txt
+
+who - Verificar quais pessoas tem acesso ao terminal e informações.
+
+| - O pipe é capaz de canalizar outputs de um comando para a input de outro comando.

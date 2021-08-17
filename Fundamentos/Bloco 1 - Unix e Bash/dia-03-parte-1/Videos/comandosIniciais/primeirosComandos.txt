@@ -1,0 +1,7 @@
+ls - Listar pastas e arquivos contidos no diretório atual.
+pwd - Mostrar o caminho completo do diretório atual.
+mkdir - Make Directory - Criar um novo diretório.
+cd - Change Directory - Mudar de diretório.
+. - Refere-se ao diretório que o usuario está.
+.. - Refere-se ao diretório pai, anterior.
+clear - Limpa os comandos do terminal.
