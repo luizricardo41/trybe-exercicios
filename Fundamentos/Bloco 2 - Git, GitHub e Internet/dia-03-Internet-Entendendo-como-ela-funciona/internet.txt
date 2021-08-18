@@ -1,0 +1,22 @@
+Internet - Entendendo como ela funciona
+
+Na aula de hoje, entendemos um pouco mais como a Internet funciona. 
+
+Há muitos processos por trás do momento em que digitamos o endereço do site e clicamos em Enter.
+
+Inicialmente, no momento em que pesquisamos pelo site(www.google.com), uma solicitação sai do nosso cliente(Navegador) e vai 
+até um servidor DNS (Domain Name System), que por sua vez irá pesquisar pelo nome do site e encontrar seu respectivo IP (Internet
+Protocol). Sim, todos os sites possuem um número de IP, mas seria impossivel decorar todos.
+
+Com a resposta do DNS é que será efetuada uma requisição aos servidores dos sites, por meio do protocolo HTTP (Hiper-Text Transfer
+Protocol), protocolo de comunicação entre servidores e cliente.
+
+Ao chegar a informação até o servidor dos sites, este fará uma pesquisa em seu banco de dados e retornará a informação para o 
+cliente. Toda essa resposta enviada pelo servidor será renderizada pelo cliente e criará a página do site pesquisado.
+
+Esse ciclo só acontece com o funcionamento do protocolo de comunicação TCP/IP (Transmission Control Protocol/Internet Protocol), 
+utilizado para transmitir os dados na rede. Outro quesito que não pode faltar é o funcionamento adequado do nosso ISP:ISP 
+(Internet Service Provider), que é nosso provedor de internet responsável por fornecer o acesso a Internet.
+
+Ainda há outros mecanismos usados no tráfego de informações para que os servidores possam trabalhar com milhões de requisições, 
+como por exemplo o balanceador de carga. Se trata de um algoritmo responsável por distribuir as requisições para o servidor.
