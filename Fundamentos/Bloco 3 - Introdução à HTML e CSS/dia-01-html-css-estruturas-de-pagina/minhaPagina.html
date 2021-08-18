@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha primeira página HTML</title>
+</head>
+<body>
+    <h1><strong> O que iremos aprender na Trybe? </strong></h1><br><br>
+    
+    <ul>
+        <li><a href="#unix">Unix e Shell</a></li><br>
+        <li><a href="#git">Git e GitHub</a></li><br>
+        <li><a href="#net">Internet</a></li><br><br><br>
+    </ul>
+
+    <h3 id="unix">Unix e Shell</h3>
+
+        <p>ls - Listar pastas e arquivos contidos no diretório atual.<br><br>
+            pwd - Mostrar o caminho completo do diretório atual.<br><br>
+            mkdir - Make Directory - Criar um novo diretório.<br><br>
+            cd - Change Directory - Mudar de diretório.<br><br>
+            . - Refere-se ao diretório que o usuario está.<br><br>
+            .. - Refere-se ao diretório pai, anterior.<br><br>
+            clear - Limpa os comandos do terminal.<br><br>
+            * - Coringa para buscas.<br><br>
+            ? - Capaz de substituir um caracter na busca de arquivos e diretórios.<br><br>
+            Os nomes de arquivos e diretórios que contenham espaços precisam estar entre aspas simples.<br><br>
+            man - Comando que acessa o manual do comando.<br><br>
+            whatis - COmando que mostra o que o comando faz.<br><br>
+            apropos - Lista todos os comandos relativos ao comando pesquisado com ele.</p><br><br>
+
+
+    <h3 id="git">Git e GitHub</h3>
+
+        <p>O Git é um sistema de controle de versão que permite o trabalho de mais de uma pessoa em um mesmo 
+            arquivo ou projeto e que provê ferramentas parroblemas que possam acontecer nesse tipo de situação.<br><br>
+        
+            O GitHub é uma plataforma que utiliza o sistema do Git para o controle das versões de algum arquivo ou projeto.<br><br>
+    
+            Principais comandos do Git:<br><br>
+
+            -git init - inicia o repositório git local, em nosso computador;<br><br>
+            -git status - ver o status do git;<br><br>
+            -git add - para adicionar os arquivos - git add 'nome-do-arquivo' ou git add .<br><br>
+
+            O git add . adiciona todos os itens que estão dentro do diretório atual, incluindo subdiretórios e arquivos.<br><br>
+
+            git commit -m "qual a ação dos arquivos, o que esse arquivo irá fazer no projeto"<br><br>
+
+            O git commit cria uma revisão com um número e comentário que será visto por todos.<br><br>
+
+            git log - mostra todas as informações de commit's feitos para aquele projeto.<br><br>
+
+            git rm nome-do-arquivo - Apagar o arquivo que não será utilizado. (Após a remoção do arquivo, é importante fazer um commit para manter atualizada as alterações feitas no Git)<br><br>
+
+            git log --diff-filter=D -- summary - Este comando irá trazer todos os commits que foram apagados, para que possamos retornar o arquivo se necessário.<br><br>
+
+            git checkout numero-do-commit-que-deseja-retornar~1 - Com este comando, o arquivo será 'ressucitado', volta a existir.<br><br>
+
+            git ignore - Serve para 'ignorar' arquivos que não se deseja adicionar para o git. <br><br>
+            É necessário criar o arquivo .gitignore com o touch e editar o arquivo, inserindo nele o arquivo ou até mesmo a extensão de arquivos, utilizando o *. Ex.: *.txt.<br><br>
+            Após a criação e edição do arquivo, é necessário adicionar o arquivo .gitignore e fazer um commit do mesmo.<br><br>
+
+            É possivel ignorar um diretório inteiro se quiser, editando o arquivo .gitignore colocando o nome do diretório seguido de /.<br><br>
+
+            git remote origin e link criado pelo GitHub - Esse comando cria um vinculo entre o repositório local e o repositório remoto.<br><br>
+
+            git push -u origin master - enviar o arquivo para o GitHub. (A primeira vez que for enviado para o GitHub, utiliza-se o -u. Das outras vezes não é mais necessário).<br><br>
+
+            git clone 'link do repositório no GitHub' - clona todo o repositório do GitHub para o computador. <br><br>
+
+            git fetch - Verificar se existe alguma alteração com minha Branch que está no repositório remoto.<br><br>
+
+            git pull - Verifica se tem uma alteração e faz um merge da branch remota para a branch local.</p><br><br>
+
+    
+    <h3 id="net">Internet</h3>
+
+        <p>Internet - Entendendo como ela funciona<br><br>
+
+            Na aula de hoje, entendemos um pouco mais como a Internet funciona. <br><br>
+
+            Há muitos processos por trás do momento em que digitamos o endereço do site e clicamos em Enter.<br><br>
+
+            Inicialmente, no momento em que pesquisamos pelo site(www.google.com), uma solicitação sai do nosso cliente(Navegador) e vai 
+            até um servidor DNS (Domain Name System), que por sua vez irá pesquisar pelo nome do site e encontrar seu respectivo IP (Internet
+            Protocol). Sim, todos os sites possuem um número de IP, mas seria impossivel decorar todos.<br><br>
+
+            Com a resposta do DNS é que será efetuada uma requisição aos servidores dos sites, por meio do protocolo HTTP (Hiper-Text Transfer
+            Protocol), protocolo de comunicação entre servidores e cliente.<br><br>
+
+            Ao chegar a informação até o servidor dos sites, este fará uma pesquisa em seu banco de dados e retornará a informação para o 
+            cliente. Toda essa resposta enviada pelo servidor será renderizada pelo cliente e criará a página do site pesquisado.<br><br>
+
+            Esse ciclo só acontece com o funcionamento do protocolo de comunicação TCP/IP (Transmission Control Protocol/Internet Protocol), 
+            utilizado para transmitir os dados na rede. Outro quesito que não pode faltar é o funcionamento adequado do nosso ISP:ISP 
+            (Internet Service Provider), que é nosso provedor de internet responsável por fornecer o acesso a Internet.<br><br>
+
+            Ainda há outros mecanismos usados no tráfego de informações para que os servidores possam trabalhar com milhões de requisições, 
+            como por exemplo o balanceador de carga. Se trata de um algoritmo responsável por distribuir as requisições para o servidor.</p>
+
+    
+    
+    <a href="https://www.google.com/" target="_blank">Google</a>
+
+</body>
+</html>
