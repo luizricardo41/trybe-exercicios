@@ -1,0 +1,15 @@
+section, article, #cabecalho {
+  border: 2px solid black;
+}
+
+#navegacao {
+  position: absolute;
+  top: 55px;
+}
+
+#navegacao li {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  text-decoration:;
+}
