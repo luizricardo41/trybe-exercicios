@@ -49,16 +49,29 @@
 
 
 //Exercicio 3 - Programa que retorna o maior entre três números:
-const a = 21;
-const b = 19;
-const c = 20;
-let resultado;
+//const a = 21;
+//const b = 19;
+//const c = 20;
+//let resultado;
+//
+//if(a > b && a > c){
+//  resultado = a;
+//} else if( b > a && b > c){
+//  resultado= b;
+//} else {
+//  resultado = c;
+//}
+//console.log (resultado);
+//
 
-if(a > b && a > c){
-  resultado = a;
-} else if( b > a && b > c){
-  resultado= b;
+//Exercicio 4 - Verificar se o valor da constante é positivo, negativo ou falso.
+
+const a = 0;
+
+if (a > 0) {
+  console.log ("Positive");
+} else if (a < 0) {
+  console.log ("Negative");
 } else {
-  resultado = c;
+  console.log ("Zero");
 }
-console.log (resultado);
