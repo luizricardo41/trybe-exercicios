@@ -95,38 +95,73 @@
 //  console.log ("Erro: Um dos valores apresentados não é válido");
 //}
 
-// Exercicio 6 - Criar programa que receba nomes das peças de xadrez e retorne os movimentos que ela faz.
+//// Exercicio 6 - Criar programa que receba nomes das peças de xadrez e retorne os movimentos que ela faz.
+//
+//let nomeDaPeca = "BISPO";
+//
+//nomeDaPeca = nomeDaPeca.toLowerCase()
+//
+//switch (nomeDaPeca) {
+//  case "peão":
+//    console.log ("O peão pode se mover uma casa por vez, ou duas casas caso seja sua primeira jogada.");
+//  break;
+//
+//  case "torre":
+//    console.log ("A torre pode se mover na horizontal e vertical, quantas casas quiser, mas não pode pular peças.");
+//  break;
+//  
+//  case "cavalo":
+//    console.log ("O cavalo se move em 'L', duas casa na vertical e uma na horizontal ou vice-versa. É a única peça que pode pular outras peças.");
+//  break;
+//  
+//  case "bispo":
+//    console.log ("O bispo pode se mover nas diagonais, quantas casas quiser.");
+//  break;
+//
+//  case "rainha":
+//    console.log ("A rainha pode se mover na diagonal, vertical e horizontal, quantas casas quiser.");
+//  break;
+//
+//  case "rei":
+//    console.log ("O rei pode se mover na diagonal, vertical e horizontal, apenas uma casa por vez.");
+//  break;
+//
+//  default:
+//    console.log ("Erro: Está peça não existe no xadrez!");
+//  break;
+//} 
 
-let nomeDaPeca = "BISPO";
+//Exercicio 7 - Programa que converte notas de porcentagem em conceito de A a F.
 
-nomeDaPeca = nomeDaPeca.toLowerCase()
+let nota = 49;
 
-switch (nomeDaPeca) {
-  case "peão":
-    console.log ("O peão pode se mover uma casa por vez, ou duas casas caso seja sua primeira jogada.");
-  break;
+if (nota < 0 || nota > 100) {
+  console.log ("Erro: Não é permitida nota maior que 100 ou menor que 0.");
+} else {
 
-  case "torre":
-    console.log ("A torre pode se mover na horizontal e vertical, quantas casas quiser, mas não pode pular peças.");
-  break;
+    if(nota >= 90){
+      nota = "A";
+      console.log("Sua nota foi: " + nota + "!");
+    }
+    else if(nota >= 80){
+      nota = "B";
+      console.log("Sua nota foi: " + nota + "!");
+    }
+    else if(nota >= 70){
+      nota = "C";
+      console.log("Sua nota foi: " + nota + "!");
+    }
+    else if(nota >= 60){
+      nota = "D";
+      console.log("Sua nota foi: " + nota + "!");
+    }
+    else if(nota >= 50){
+      nota = "E";
+      console.log("Sua nota foi: " + nota + "!");
+    }
+    else if(nota < 50){
+      nota = "F";
+      console.log("Sua nota foi: " + nota + "!");
+    }
   
-  case "cavalo":
-    console.log ("O cavalo se move em 'L', duas casa na vertical e uma na horizontal ou vice-versa. É a única peça que pode pular outras peças.");
-  break;
-  
-  case "bispo":
-    console.log ("O bispo pode se mover nas diagonais, quantas casas quiser.");
-  break;
-
-  case "rainha":
-    console.log ("A rainha pode se mover na diagonal, vertical e horizontal, quantas casas quiser.");
-  break;
-
-  case "rei":
-    console.log ("O rei pode se mover na diagonal, vertical e horizontal, apenas uma casa por vez.");
-  break;
-
-  default:
-    console.log ("Erro: Está peça não existe no xadrez!");
-  break;
-} 
+}
