@@ -79,18 +79,54 @@
 
 //Exercicio 5 - Verificar se os 3 valores da constante representam a de um triangulo (retornar true ou false).
 
-const a = -50;
-const b = 40;
-const c = 90;
+//const a = -50;
+//const b = 40;
+//const c = 90;
+//
+//if (a > 0 && b > 0 && c > 0){
+//
+//  if (a + b + c === 180){
+//    console.log (true);
+//  } else {
+//    console.log(false);
+//  }
+//
+//} else {
+//  console.log ("Erro: Um dos valores apresentados não é válido");
+//}
 
-if (a > 0 && b > 0 && c > 0){
+// Exercicio 6 - Criar programa que receba nomes das peças de xadrez e retorne os movimentos que ela faz.
 
-  if (a + b + c === 180){
-    console.log (true);
-  } else {
-    console.log(false);
-  }
+let nomeDaPeca = "BISPO";
 
-} else {
-  console.log ("Erro: Um dos valores apresentados não é válido");
-}
+nomeDaPeca = nomeDaPeca.toLowerCase()
+
+switch (nomeDaPeca) {
+  case "peão":
+    console.log ("O peão pode se mover uma casa por vez, ou duas casas caso seja sua primeira jogada.");
+  break;
+
+  case "torre":
+    console.log ("A torre pode se mover na horizontal e vertical, quantas casas quiser, mas não pode pular peças.");
+  break;
+  
+  case "cavalo":
+    console.log ("O cavalo se move em 'L', duas casa na vertical e uma na horizontal ou vice-versa. É a única peça que pode pular outras peças.");
+  break;
+  
+  case "bispo":
+    console.log ("O bispo pode se mover nas diagonais, quantas casas quiser.");
+  break;
+
+  case "rainha":
+    console.log ("A rainha pode se mover na diagonal, vertical e horizontal, quantas casas quiser.");
+  break;
+
+  case "rei":
+    console.log ("O rei pode se mover na diagonal, vertical e horizontal, apenas uma casa por vez.");
+  break;
+
+  default:
+    console.log ("Erro: Está peça não existe no xadrez!");
+  break;
+} 
