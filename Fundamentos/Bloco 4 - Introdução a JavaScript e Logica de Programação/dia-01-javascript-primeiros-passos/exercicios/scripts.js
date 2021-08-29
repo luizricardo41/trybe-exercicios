@@ -180,12 +180,28 @@
 
 //Exercicio 9 - Programa para verificar se apenas 1 número de 3 seja ímpar (retornar true).
 
-const a = 10;
-const b = 4;
-const c = 20;
+//const a = 10;
+//const b = 4;
+//const c = 20;
+//
+//if (a % 2 !== 0 || b % 2 !== 0 || c % 2 !== 0){
+//  console.log (true);
+//} else {
+//  console.log (false);
+//}
 
-if (a % 2 !== 0 || b % 2 !== 0 || c % 2 !== 0){
-  console.log (true);
+//Exercicio 10 - Programa para calcular o lucro de venda de um produto.
+
+const custo = 130;
+const venda = 320;
+let lucro;
+let custoTotal;
+
+custoTotal = custo + (custo * 0.20);
+
+if (custo <= 0 || venda <= 0) {
+  console.log ("Os valores não podem ser iguais ou menores que zero!")
 } else {
-  console.log (false);
+  lucro = (1000 * venda) - (1000 * custoTotal);
 }
+console.log ("O lucro será de: " + lucro);
