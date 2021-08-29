@@ -133,35 +133,47 @@
 
 //Exercicio 7 - Programa que converte notas de porcentagem em conceito de A a F.
 
-let nota = 49;
+//let nota = 49;
+//
+//if (nota < 0 || nota > 100) {
+//  console.log ("Erro: Não é permitida nota maior que 100 ou menor que 0.");
+//} else {
+//
+//    if(nota >= 90){
+//      nota = "A";
+//      console.log("Sua nota foi: " + nota + "!");
+//    }
+//    else if(nota >= 80){
+//      nota = "B";
+//      console.log("Sua nota foi: " + nota + "!");
+//    }
+//    else if(nota >= 70){
+//      nota = "C";
+//      console.log("Sua nota foi: " + nota + "!");
+//    }
+//    else if(nota >= 60){
+//      nota = "D";
+//      console.log("Sua nota foi: " + nota + "!");
+//    }
+//    else if(nota >= 50){
+//      nota = "E";
+//      console.log("Sua nota foi: " + nota + "!");
+//    }
+//    else if(nota < 50){
+//      nota = "F";
+//      console.log("Sua nota foi: " + nota + "!");
+//    }
+//  
+//}
 
-if (nota < 0 || nota > 100) {
-  console.log ("Erro: Não é permitida nota maior que 100 ou menor que 0.");
+//Exercicio 8 - Programa para verificar se apenas 1 número de 3 seja par (retornar true).
+
+const a = 11;
+const b = 3;
+const c = 21;
+
+if (a % 2 === 0 || b % 2 === 0 || c % 2 === 0){
+  console.log (true);
 } else {
-
-    if(nota >= 90){
-      nota = "A";
-      console.log("Sua nota foi: " + nota + "!");
-    }
-    else if(nota >= 80){
-      nota = "B";
-      console.log("Sua nota foi: " + nota + "!");
-    }
-    else if(nota >= 70){
-      nota = "C";
-      console.log("Sua nota foi: " + nota + "!");
-    }
-    else if(nota >= 60){
-      nota = "D";
-      console.log("Sua nota foi: " + nota + "!");
-    }
-    else if(nota >= 50){
-      nota = "E";
-      console.log("Sua nota foi: " + nota + "!");
-    }
-    else if(nota < 50){
-      nota = "F";
-      console.log("Sua nota foi: " + nota + "!");
-    }
-  
+  console.log (false);
 }
