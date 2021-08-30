@@ -10,44 +10,52 @@ console.log(result);*/
 
 //FUNCTION DA SUBTRAÇÃO;
 
-//function subtraction(a, b) {
-//  return a - b;
-//}
-//let result = subtraction (10, 30);
-//console.log(result);
+/*function subtraction(a, b) {
+  return a - b;
+}
+let result = subtraction (10, 30);
+console.log(result);*/
 
 //FUNCTION DA DIVISÃO;
 
-//function division(a, b) {
-//  return b / a;
-//}
-//let result = division (10, 30);
-//console.log(result);
+/*function division(a, b) {
+  return b / a;
+}
+let result = division (10, 30);
+console.log(result);*/
 
 //FUNCTION DA MULTIPLICAÇÃO;
 
-//function multiplication(a, b) {
-//  return a * b;
-//}
-//let result = multiplication (10, 30);
-//console.log(result);
+/*function multiplication(a, b) {
+  return a * b;
+}
+let result = multiplication (10, 30);
+console.log(result);*/
 
 //FUNCTION DO MODULO;
 
-function module(a, b) {
+/*function module(a, b) {
   return a % b;
 }
 let result = module (10, 3);
-console.log(result);
-
-//modulo
-//let resto;
-
-//resto = (a%b);
-//console.log(resto);
+console.log(result);*/
 
 
 //Exercicio 2 - Programa que retorna o maior entre dois números:
+
+// FUNCTION RETORNA MAIOR NÚMERO ENTRE 2 NUMEROS;
+
+function returnBigger (a, b){
+
+  if(a > b) {
+    return a;
+  } else{
+    return b;
+  }
+}
+
+let resultado = returnBigger(25, 15);
+console.log (resultado);
 
 //const a = 15;
 //const b = 20;
