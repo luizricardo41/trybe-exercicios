@@ -83,26 +83,35 @@
 
 //Exercicio 7 - Encontrar o menor valor da array e imprimi-lo.
 
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let valorMaior = 0;
-let valor = 0;
+//let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+//let valorMaior = 0;
+//let valor = 0;
+//
+//for (let i = 0; i < numbers.length; i += 1){
+//  valor = numbers[i];
+//  
+//  if(valor > 0 && valor >= valorMaior){
+//    valorMaior = valor;
+//  }
+//}
+//
+//let valorMenor = valorMaior;
+//
+//for (let i = 0; i < numbers.length; i += 1){
+//  valor = numbers[i];
+//  
+//  if(valor < valorMaior && valor <= valorMenor){
+//    valorMenor = valor;
+//  }
+//}
+//console.log(valorMenor);
 
-for (let i = 0; i < numbers.length; i += 1){
-  valor = numbers[i];
-  
-  if(valor > 0 && valor >= valorMaior){
-    valorMaior = valor;
-  }
+//Exercicio 8 - Criar array do 1 ao 25 utilizando for.
+
+let numbers = [];
+let contador = 1;
+for (let i = 0; i < 25; i += 1){
+  numbers.push(contador);
+  contador += 1;
 }
-
-let valorMenor = valorMaior;
-
-for (let i = 0; i < numbers.length; i += 1){
-  valor = numbers[i];
-  
-  if(valor < valorMaior && valor <= valorMenor){
-    valorMenor = valor;
-  }
-}
-
-console.log(valorMenor);
+console.log(numbers);
