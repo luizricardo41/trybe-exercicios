@@ -64,19 +64,45 @@
 
 //Exercicio 6 - Percorrer array, descobrir quantos valores impares existem e imprimir resultado.
 
+//let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+//let numerosImpares = 0;
+//let resto;
+//
+//for (let i = 0; i < numbers.length; i += 1){
+//  resto = (numbers[i] % 2);
+//
+//  if (resto !== 0){
+//   numerosImpares = numerosImpares + 1; 
+//  }
+//}
+//if (numerosImpares ===0){
+//  console.log("Nenhum valor impar encontrado.")
+//} else {
+//console.log(numerosImpares);
+//}
+
+//Exercicio 7 - Encontrar o menor valor da array e imprimi-lo.
+
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let numerosImpares = 0;
-let resto;
+let valorMaior = 0;
+let valor = 0;
 
 for (let i = 0; i < numbers.length; i += 1){
-  resto = (numbers[i] % 2);
-
-  if (resto !== 0){
-   numerosImpares = numerosImpares + 1; 
+  valor = numbers[i];
+  
+  if(valor > 0 && valor >= valorMaior){
+    valorMaior = valor;
   }
 }
-if (numerosImpares ===0){
-  console.log("Nenhum valor impar encontrado.")
-} else {
-console.log(numerosImpares);
+
+let valorMenor = valorMaior;
+
+for (let i = 0; i < numbers.length; i += 1){
+  valor = numbers[i];
+  
+  if(valor < valorMaior && valor <= valorMenor){
+    valorMenor = valor;
+  }
 }
+
+console.log(valorMenor);
