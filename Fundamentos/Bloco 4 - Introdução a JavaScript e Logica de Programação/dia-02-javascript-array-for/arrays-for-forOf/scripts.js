@@ -52,16 +52,8 @@
 
 //Exercicio 3 - Pagina Arrays - Adicione o valor "Contato" no final do array menu:
 
-//let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
-//
-//menu.push('Contato');
-//
-//console.log(menu);
+let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
 
-//Exercicio 1 - Pagina For - Utilizar o for para imprimir os elementos da lista groceryList com o console.log():
+menu.push('Contato');
 
-let groceryList = ['Arroz', 'Feijão', 'Alface', 'Melancia'];
-
-for (let index = 0; index < groceryList.length; index += 1){
-  console.log(groceryList[index]);
-}
+console.log(menu);
