@@ -64,19 +64,70 @@
 
 //Exercicio 6 - Percorrer array, descobrir quantos valores impares existem e imprimir resultado.
 
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let numerosImpares = 0;
-let resto;
+//let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+//let numerosImpares = 0;
+//let resto;
+//
+//for (let i = 0; i < numbers.length; i += 1){
+//  resto = (numbers[i] % 2);
+//
+//  if (resto !== 0){
+//   numerosImpares = numerosImpares + 1; 
+//  }
+//}
+//if (numerosImpares ===0){
+//  console.log("Nenhum valor impar encontrado.")
+//} else {
+//console.log(numerosImpares);
+//}
 
-for (let i = 0; i < numbers.length; i += 1){
-  resto = (numbers[i] % 2);
+//Exercicio 7 - Encontrar o menor valor da array e imprimi-lo.
 
-  if (resto !== 0){
-   numerosImpares = numerosImpares + 1; 
-  }
+//let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+//let valorMaior = 0;
+//let valor = 0;
+//
+//for (let i = 0; i < numbers.length; i += 1){
+//  valor = numbers[i];
+//  
+//  if(valor > 0 && valor >= valorMaior){
+//    valorMaior = valor;
+//  }
+//}
+//
+//let valorMenor = valorMaior;
+//
+//for (let i = 0; i < numbers.length; i += 1){
+//  valor = numbers[i];
+//  
+//  if(valor < valorMaior && valor <= valorMenor){
+//    valorMenor = valor;
+//  }
+//}
+//console.log(valorMenor);
+
+//Exercicio 8 - Criar array do 1 ao 25 utilizando for.
+
+//let numbers = [];
+//let contador = 1;
+//for (let i = 0; i < 25; i += 1){
+//  numbers.push(contador);
+//  contador += 1;
+//}
+//console.log(numbers);
+
+//Exercicio 9 - Imprimir o resultado de cada elemento dividido por 2.
+
+let numbers = [];
+let contador = 1;
+let quociente;
+
+for (let i = 0; i < 25; i += 1){
+  numbers.push(contador);
+  contador += 1;
 }
-if (numerosImpares ===0){
-  console.log("Nenhum valor impar encontrado.")
-} else {
-console.log(numerosImpares);
+
+for (i = 0; i < numbers.length; i += 1){
+  quociente = (numbers[i] / 2);
+  console.log(quociente);
 }
