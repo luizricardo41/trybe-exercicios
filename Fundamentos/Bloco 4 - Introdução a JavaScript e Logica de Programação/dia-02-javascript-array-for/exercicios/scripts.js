@@ -49,15 +49,34 @@
 
 //Exercicio 5 - Encontrar o maior valor da array e imprimi-lo.
 
+//let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+//let valorMaior = 0;
+//let valor = 0;
+//
+//for (let i = 0; i < numbers.length; i += 1){
+//  valor = numbers[i];
+//  
+//  if(valor > 0 && valor >= valorMaior){
+//    valorMaior = valor;
+//  }
+//}
+//console.log(valorMaior);
+
+//Exercicio 6 - Percorrer array, descobrir quantos valores impares existem e imprimir resultado.
+
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let valorMaior = 0;
-let valor = 0;
+let numerosImpares = 0;
+let resto;
 
 for (let i = 0; i < numbers.length; i += 1){
-  valor = numbers[i];
-  
-  if(valor > 0 && valor >= valorMaior){
-    valorMaior = valor;
+  resto = (numbers[i] % 2);
+
+  if (resto !== 0){
+   numerosImpares = numerosImpares + 1; 
   }
 }
-console.log(valorMaior);
+if (numerosImpares ===0){
+  console.log("Nenhum valor impar encontrado.")
+} else {
+console.log(numerosImpares);
+}
