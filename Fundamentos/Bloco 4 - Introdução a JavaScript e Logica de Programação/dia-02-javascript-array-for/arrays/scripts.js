@@ -29,9 +29,31 @@
 
 //['Tomar café', 'Reunião' ]
 
-let tasksList = ['Tomar café', 'Reunião', 'Brincar com o cachorro'];
-
-let indexOfTask = tasksList.indexOf('Brincar com o cachorro');
-console.log(indexOfTask);
+//let tasksList = ['Tomar café', 'Reunião', 'Brincar com o cachorro'];
+//
+//let indexOfTask = tasksList.indexOf('Brincar com o cachorro');
+//console.log(indexOfTask);
 
 // 1
+
+//Exercicio 1 - Pagina Arrays - Obtenha o valor "Serviços" do array menu:
+
+//let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
+//let menuServices = menu[1];
+//
+//console.log(menuServices);
+
+//Exercicio 2 - Pagina Arrays - Procure o índice do valor "Portifólio" do array menu:
+
+//let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
+//let indexOfPortfolio = menu.indexOf('Portfólio');
+//
+//console.log(indexOfPortfolio);
+
+//Exercicio 3 - Pagina Arrays - Adicione o valor "Contato" no final do array menu:
+
+let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
+
+menu.push('Contato');
+
+console.log(menu);
