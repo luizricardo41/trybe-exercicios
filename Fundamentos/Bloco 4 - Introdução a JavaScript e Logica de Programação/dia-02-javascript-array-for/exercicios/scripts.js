@@ -108,10 +108,26 @@
 
 //Exercicio 8 - Criar array do 1 ao 25 utilizando for.
 
+//let numbers = [];
+//let contador = 1;
+//for (let i = 0; i < 25; i += 1){
+//  numbers.push(contador);
+//  contador += 1;
+//}
+//console.log(numbers);
+
+//Exercicio 9 - Imprimir o resultado de cada elemento dividido por 2.
+
 let numbers = [];
 let contador = 1;
+let quociente;
+
 for (let i = 0; i < 25; i += 1){
   numbers.push(contador);
   contador += 1;
 }
-console.log(numbers);
+
+for (i = 0; i < numbers.length; i += 1){
+  quociente = (numbers[i] / 2);
+  console.log(quociente);
+}
