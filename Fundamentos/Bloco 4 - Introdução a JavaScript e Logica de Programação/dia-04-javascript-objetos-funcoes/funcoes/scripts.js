@@ -120,7 +120,7 @@ console.log (result);*/
 
 // FUNCTION RECEBER NOMES DAS PEÇAS E RETORNAR MOVIMENTOS (XADREZ);
 
-function xadrez (nomeDaPeca) {
+/*function xadrez (nomeDaPeca) {
 
 nomeDaPeca = nomeDaPeca.toLowerCase()
 
@@ -156,43 +156,48 @@ nomeDaPeca = nomeDaPeca.toLowerCase()
 }
 
 let mensagem = xadrez('CAVALO');
-console.log (mensagem);
+console.log (mensagem);*/
 
 
 //Exercicio 7 - Programa que converte notas de porcentagem em conceito de A a F.
 
-//let nota = 49;
+// FUNCTION QUE CONVERTE NOTA DE PORCENTAGEM EM CONCEITO DE 'A' A 'F';
 
-//if (nota < 0 || nota > 100) {
-//  console.log ("Erro: Não é permitida nota maior que 100 ou menor que 0.");
-//} else {
-//
-//    if(nota >= 90){
-//      nota = "A";
-//      console.log("Sua nota foi: " + nota + "!");
-//    }
-//    else if(nota >= 80){
-//      nota = "B";
-//      console.log("Sua nota foi: " + nota + "!");
-//    }
-//    else if(nota >= 70){
-//      nota = "C";
-//      console.log("Sua nota foi: " + nota + "!");
-//    }
-//    else if(nota >= 60){
-//      nota = "D";
-//      console.log("Sua nota foi: " + nota + "!");
-//    }
-//    else if(nota >= 50){
-//      nota = "E";
-//      console.log("Sua nota foi: " + nota + "!");
-//    }
-//    else if(nota < 50){
-//      nota = "F";
-//      console.log("Sua nota foi: " + nota + "!");
-//    }
-//  
-//}
+function notas (nota) {
+
+  if (nota < 0 || nota > 100) {
+    return "Erro: Não é permitida nota maior que 100 ou menor que 0.";
+  } else {
+
+    if(nota >= 90){
+      nota = "A";
+      return "Sua nota foi: " + nota + "!";
+    }
+    else if(nota >= 80){
+      nota = "B";
+      return "Sua nota foi: " + nota + "!";
+    }
+    else if(nota >= 70){
+      nota = "C";
+      return "Sua nota foi: " + nota + "!";
+    }
+    else if(nota >= 60){
+      nota = "D";
+      return "Sua nota foi: " + nota + "!";
+    }
+    else if(nota >= 50){
+      nota = "E";
+      return "Sua nota foi: " + nota + "!";
+    }
+    else if(nota < 50){
+      nota = "F";
+      return "Sua nota foi: " + nota + "!";
+    }
+  }
+}
+let result = notas(-1);
+console.log(result);
+
 
 //Exercicio 8 - Programa para verificar se apenas 1 número de 3 seja par (retornar true).
 
