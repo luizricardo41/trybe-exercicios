@@ -219,7 +219,7 @@ console.log(result);*/
 
 // FUNCTION VERIFICAR SE UM NUMERO ENTRE 3 É IMPAR;
 
-function numImpar (a, b, c) {
+/*function numImpar (a, b, c) {
 
   if (a % 2 !== 0 || b % 2 !== 0 || c % 2 !== 0){
     return true;
@@ -228,19 +228,28 @@ function numImpar (a, b, c) {
   }
 }
 let result = numImpar(12,6,2);
-console.log(result);
+console.log(result);*/
 
-//const a = 10;
-//const b = 4;
-//const c = 20;
-//
-//if (a % 2 !== 0 || b % 2 !== 0 || c % 2 !== 0){
-//  console.log (true);
-//} else {
-//  console.log (false);
-//}
 
 //Exercicio 10 - Programa para calcular o lucro de venda de um produto.
+
+// FUNCTION PROGRAMA PARA CALCULAR O LUCRO DA VENDA DE UM PRODUTO;
+
+function calculaLucro (custo, venda) {
+
+    custoTotal = custo + (custo * 0.20);
+
+  if (custo <= 0 || venda <= 0) {
+    return "Os valores não podem ser iguais ou menores que zero!"
+  } else {
+    let lucro = (1000 * venda) - (1000 * custoTotal);
+    return lucro;
+  }
+}
+
+let lucroTotal = calculaLucro(150, 320)
+console.log(lucroTotal);
+
 
 //const custo = 130;
 //const venda = 320;
