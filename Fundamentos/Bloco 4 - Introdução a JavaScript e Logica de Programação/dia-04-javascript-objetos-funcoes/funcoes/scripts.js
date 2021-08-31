@@ -203,7 +203,7 @@ console.log(result);*/
 
 // FUNCTION VERIFICAR SE UM NUMERO ENTRE 3 É PAR
 
-function numPar (a, b, c) {
+/*function numPar (a, b, c) {
 
   if (a % 2 === 0 || b % 2 === 0 || c % 2 === 0){
     return true;
@@ -212,15 +212,23 @@ function numPar (a, b, c) {
   }
 }
 let result = numPar(13,5,1);
-console.log(result);
+console.log(result);*/
 
-//if (a % 2 === 0 || b % 2 === 0 || c % 2 === 0){
-//  console.log (true);
-//} else {
-//  console.log (false);
-//}
 
 //Exercicio 9 - Programa para verificar se apenas 1 número de 3 seja ímpar (retornar true).
+
+// FUNCTION VERIFICAR SE UM NUMERO ENTRE 3 É IMPAR;
+
+function numImpar (a, b, c) {
+
+  if (a % 2 !== 0 || b % 2 !== 0 || c % 2 !== 0){
+    return true;
+  } else {
+    return false;
+  }
+}
+let result = numImpar(12,6,2);
+console.log(result);
 
 //const a = 10;
 //const b = 4;
