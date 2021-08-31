@@ -22,7 +22,7 @@ console.log (info);*/
 
 // EXERCICIO 3 - FAZER UM FOR/IN QUE MOSTRE TODAS AS CHAVES DO OBJETO
 
-let info = {
+/*let info = {
   personagem: 'Margarida',
   origem: 'Pato Donald',
   nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
@@ -32,4 +32,18 @@ info['recorrente'] = 'sim';
 
 for (let key in info){
   console.log (key);
+}*/
+
+// EXERCICIO 4 - FAZER UM NOVO FOR/IN QUE MOSTRE OS VALORES DAS CHAVES
+
+let info = {
+  personagem: 'Margarida',
+  origem: 'Pato Donald',
+  nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
+};
+
+info['recorrente'] = 'sim';
+
+for (let key in info){
+  console.log (info[key]);
 }
