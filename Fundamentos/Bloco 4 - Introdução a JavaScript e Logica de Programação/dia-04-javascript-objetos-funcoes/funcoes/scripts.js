@@ -163,7 +163,7 @@ console.log (mensagem);*/
 
 // FUNCTION QUE CONVERTE NOTA DE PORCENTAGEM EM CONCEITO DE 'A' A 'F';
 
-function notas (nota) {
+/*function notas (nota) {
 
   if (nota < 0 || nota > 100) {
     return "Erro: Não é permitida nota maior que 100 ou menor que 0.";
@@ -196,15 +196,24 @@ function notas (nota) {
   }
 }
 let result = notas(-1);
-console.log(result);
+console.log(result);*/
 
 
 //Exercicio 8 - Programa para verificar se apenas 1 número de 3 seja par (retornar true).
 
-//const a = 11;
-//const b = 3;
-//const c = 21;
-//
+// FUNCTION VERIFICAR SE UM NUMERO ENTRE 3 É PAR
+
+function numPar (a, b, c) {
+
+  if (a % 2 === 0 || b % 2 === 0 || c % 2 === 0){
+    return true;
+  } else {
+    return false;
+  }
+}
+let result = numPar(13,5,1);
+console.log(result);
+
 //if (a % 2 === 0 || b % 2 === 0 || c % 2 === 0){
 //  console.log (true);
 //} else {
