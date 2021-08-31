@@ -45,45 +45,36 @@ console.log(result);*/
 
 // FUNCTION RETORNA MAIOR NÚMERO ENTRE 2 NUMEROS;
 
-function returnBigger (a, b){
+//function returnBigger (a, b){
 
-  if(a > b) {
+//  if(a > b) {
+//    return a;
+//  } else{
+//    return b;
+//  }
+//}
+
+//let resultado = returnBigger(25, 15);
+//console.log (resultado);
+
+//Exercicio 3 - Programa que retorna o maior entre três números:
+
+//FUNCTION RETORNA MAIOR VALOR ENTRE 3 NÚMEROS
+
+function returnBigger (a, b, c) {
+  
+  if(a > b && a > c){
     return a;
-  } else{
+  } else if( b > a && b > c){
     return b;
+  } else {
+    return c;
   }
 }
 
-let resultado = returnBigger(25, 15);
+let resultado = returnBigger(13, 22, 3);
 console.log (resultado);
 
-//const a = 15;
-//const b = 20;
-//let resultado;
-//
-//if(a > b) {
-//  resultado = a;
-//} else{
-//  resultado = b;
-//}
-//console.log(resultado);
-
-
-//Exercicio 3 - Programa que retorna o maior entre três números:
-//const a = 21;
-//const b = 19;
-//const c = 20;
-//let resultado;
-//
-//if(a > b && a > c){
-//  resultado = a;
-//} else if( b > a && b > c){
-//  resultado= b;
-//} else {
-//  resultado = c;
-//}
-//console.log (resultado);
-//
 
 //Exercicio 4 - Verificar se o valor da constante é positivo, negativo ou falso.
 
