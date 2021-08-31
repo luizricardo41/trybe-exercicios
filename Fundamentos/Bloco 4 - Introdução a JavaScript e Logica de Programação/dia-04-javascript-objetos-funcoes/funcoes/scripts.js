@@ -61,33 +61,37 @@ console.log(result);*/
 
 //FUNCTION RETORNA MAIOR VALOR ENTRE 3 NÚMEROS
 
-function returnBigger (a, b, c) {
-  
-  if(a > b && a > c){
-    return a;
-  } else if( b > a && b > c){
-    return b;
-  } else {
-    return c;
-  }
-}
-
-let resultado = returnBigger(13, 22, 3);
-console.log (resultado);
-
-
-//Exercicio 4 - Verificar se o valor da constante é positivo, negativo ou falso.
-
-//const a = 0;
-//
-//if (a > 0) {
-//  console.log ("Positive");
-//} else if (a < 0) {
-//  console.log ("Negative");
-//} else {
-//  console.log ("Zero");
+//function returnBigger (a, b, c) {
+//  
+//  if(a > b && a > c){
+//    return a;
+//  } else if( b > a && b > c){
+//    return b;
+//  } else {
+//    return c;
+//  }
 //}
 //
+//let resultado = returnBigger(13, 22, 3);
+//console.log (resultado);
+
+
+//Exercicio 4 - Verificar se o valor da constante é positivo, negativo ou zero.
+
+//FUNCTION VERIFICAR SE VALOR É POSITIVO, NEGATIVO OU ZERO.
+
+function PositiveNegativeZero (a) {
+  
+  if (a > 0) {
+    return "Positive";
+  } else if (a < 0) {
+    return "Negative";
+  } else {
+    return "Zero";
+  }
+}
+console.log (PositiveNegativeZero (0));
+
 
 //Exercicio 5 - Verificar se os 3 valores da constante representam a de um triangulo (retornar true ou false).
 
