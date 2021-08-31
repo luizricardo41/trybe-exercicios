@@ -97,7 +97,7 @@ console.log(result);*/
 
 // FUNCTION VERIFICAR SE OS 3 VALORES REPRESENTAM UM TRIANGULO;
 
-function triangle (a, b, c) {
+/*function triangle (a, b, c) {
   
   if (a > 0 && b > 0 && c > 0){
 
@@ -113,64 +113,56 @@ function triangle (a, b, c) {
 }
 
 let result = triangle(50, 40, 100);
-console.log (result);
+console.log (result);*/
 
-//const a = -50;
-//const b = 40;
-//const c = 90;
-//
-//if (a > 0 && b > 0 && c > 0){
-//
-//  if (a + b + c === 180){
-//    console.log (true);
-//  } else {
-//    console.log(false);
-//  }
-//
-//} else {
-//  console.log ("Erro: Um dos valores apresentados não é válido");
-//}
 
-//// Exercicio 6 - Criar programa que receba nomes das peças de xadrez e retorne os movimentos que ela faz.
-//
-//let nomeDaPeca = "BISPO";
-//
-//nomeDaPeca = nomeDaPeca.toLowerCase()
-//
-//switch (nomeDaPeca) {
-//  case "peão":
-//    console.log ("O peão pode se mover uma casa por vez, ou duas casas caso seja sua primeira jogada.");
-//  break;
-//
-//  case "torre":
-//    console.log ("A torre pode se mover na horizontal e vertical, quantas casas quiser, mas não pode pular peças.");
-//  break;
-//  
-//  case "cavalo":
-//    console.log ("O cavalo se move em 'L', duas casa na vertical e uma na horizontal ou vice-versa. É a única peça que pode pular outras peças.");
-//  break;
-//  
-//  case "bispo":
-//    console.log ("O bispo pode se mover nas diagonais, quantas casas quiser.");
-//  break;
-//
-//  case "rainha":
-//    console.log ("A rainha pode se mover na diagonal, vertical e horizontal, quantas casas quiser.");
-//  break;
-//
-//  case "rei":
-//    console.log ("O rei pode se mover na diagonal, vertical e horizontal, apenas uma casa por vez.");
-//  break;
-//
-//  default:
-//    console.log ("Erro: Está peça não existe no xadrez!");
-//  break;
-//} 
+// Exercicio 6 - Criar programa que receba nomes das peças de xadrez e retorne os movimentos que ela faz.
+
+// FUNCTION RECEBER NOMES DAS PEÇAS E RETORNAR MOVIMENTOS (XADREZ);
+
+function xadrez (nomeDaPeca) {
+
+nomeDaPeca = nomeDaPeca.toLowerCase()
+
+  switch (nomeDaPeca) {
+    case "peão":
+      return "O peão pode se mover uma casa por vez, ou duas casas caso seja sua primeira jogada.";
+    //break;
+
+    case "torre":
+      return "A torre pode se mover na horizontal e vertical, quantas casas quiser, mas não pode pular peças.";
+    //break;
+
+    case "cavalo":
+      return "O cavalo se move em 'L', duas casa na vertical e uma na horizontal ou vice-versa. É a única peça que pode pular outras peças.";
+    //break;
+
+    case "bispo":
+      return "O bispo pode se mover nas diagonais, quantas casas quiser.";
+    //break;
+
+    case "rainha":
+      return "A rainha pode se mover na diagonal, vertical e horizontal, quantas casas quiser.";
+    //break;
+
+    case "rei":
+      return "O rei pode se mover na diagonal, vertical e horizontal, apenas uma casa por vez.";
+    //break;
+
+    default:
+      return "Erro: Está peça não existe no xadrez!";
+    //break;
+  } 
+}
+
+let mensagem = xadrez('CAVALO');
+console.log (mensagem);
+
 
 //Exercicio 7 - Programa que converte notas de porcentagem em conceito de A a F.
 
 //let nota = 49;
-//
+
 //if (nota < 0 || nota > 100) {
 //  console.log ("Erro: Não é permitida nota maior que 100 ou menor que 0.");
 //} else {
