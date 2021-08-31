@@ -10,6 +10,18 @@ console.log ("Bem vinda, " + info.personagem + ".");*/
 
 // EXERCICIO 2 - INSERIR NOVA PROPRIEDADE AO OBJETO
 
+/*let info = {
+  personagem: 'Margarida',
+  origem: 'Pato Donald',
+  nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
+};
+
+info['recorrente'] = 'sim';
+
+console.log (info);*/
+
+// EXERCICIO 3 - FAZER UM FOR/IN QUE MOSTRE TODAS AS CHAVES DO OBJETO
+
 let info = {
   personagem: 'Margarida',
   origem: 'Pato Donald',
@@ -18,4 +30,6 @@ let info = {
 
 info['recorrente'] = 'sim';
 
-console.log (info);
+for (let key in info){
+  console.log (key);
+}
