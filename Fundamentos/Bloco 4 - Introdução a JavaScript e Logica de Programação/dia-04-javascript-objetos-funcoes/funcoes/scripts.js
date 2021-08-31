@@ -80,20 +80,40 @@ console.log(result);*/
 
 //FUNCTION VERIFICAR SE VALOR É POSITIVO, NEGATIVO OU ZERO.
 
-function PositiveNegativeZero (a) {
-  
-  if (a > 0) {
-    return "Positive";
-  } else if (a < 0) {
-    return "Negative";
-  } else {
-    return "Zero";
-  }
-}
-console.log (PositiveNegativeZero (0));
+//function PositiveNegativeZero (a) {
+//  
+//  if (a > 0) {
+//    return "Positive";
+//  } else if (a < 0) {
+//    return "Negative";
+//  } else {
+//    return "Zero";
+//  }
+//}
+//console.log (PositiveNegativeZero (0));
 
 
 //Exercicio 5 - Verificar se os 3 valores da constante representam a de um triangulo (retornar true ou false).
+
+// FUNCTION VERIFICAR SE OS 3 VALORES REPRESENTAM UM TRIANGULO;
+
+function triangle (a, b, c) {
+  
+  if (a > 0 && b > 0 && c > 0){
+
+    if (a + b + c === 180){
+      return true;
+    } else {
+      return false;
+    }
+
+  } else {
+  return "Erro: Um dos valores apresentados não é válido";
+  }
+}
+
+let result = triangle(50, 40, 100);
+console.log (result);
 
 //const a = -50;
 //const b = 40;
