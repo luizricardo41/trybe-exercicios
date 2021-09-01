@@ -19,7 +19,7 @@ console.log (result);*/
 
 // EXERCICIO 2 - PARTE II - CRIAR UMA FUNÇÃO QUE RECEBA UM ARRAY E RETORNE O INDICE DO MAIOR VALOR.
 
-function indexHigherValue (arrayValue) {
+/*function indexHigherValue (arrayValue) {
 
   let value = 0;
   let higherValue = 0;
@@ -37,4 +37,37 @@ function indexHigherValue (arrayValue) {
 
 let arrayTest = [3, 10, 20, 1, 50, 67, 81, 89, 35];
 let result = indexHigherValue(arrayTest);
+console.log (result);*/
+
+// EXERCICIO 3 - PARTE II - CRIAR UMA FUNÇÃO QUE RECEBA UM ARRAY DE INTEIROS E RETORNE O INDICE DO MENOR VALOR.
+
+function indexLowestValue (arrayValue) {
+
+  let value = 0;
+  let higherValue = 0;
+
+  for (let i = 0; i < arrayValue.length; i += 1){
+    value = arrayValue[i];
+
+    if (value >= higherValue){
+      higherValue = value;
+    }
+  }
+
+  let lowestValue = higherValue;
+
+  for (let i = 0; i < arrayValue.length; i += 1){
+    value = arrayValue[i];
+    
+    if(value < higherValue && value < lowestValue){
+    lowestValue = value;
+    }
+  }
+
+  let indexLowest = arrayValue.indexOf(lowestValue);
+  return indexLowest;
+}
+
+let arrayTest = [3, 10, 20, 1, 50, 67, 81, 89, 35];
+let result = indexLowestValue (arrayTest);
 console.log (result);
