@@ -31,9 +31,10 @@ function indexHigherValue (arrayValue) {
       higherValue = value;
     }
   }
-  return higherValue;
+  let indexHigher = arrayValue.indexOf (higherValue);
+  return indexHigher;
 }
 
-let arrayTest = [3, 106, 20, 1, 50, 67, 103, 89, 35];
+let arrayTest = [3, 10, 20, 1, 50, 67, 81, 89, 35];
 let result = indexHigherValue(arrayTest);
 console.log (result);
