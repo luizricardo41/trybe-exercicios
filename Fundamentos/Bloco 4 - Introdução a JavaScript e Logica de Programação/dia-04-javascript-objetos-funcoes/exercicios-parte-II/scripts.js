@@ -99,7 +99,7 @@ console.log (result);*/
 
 // EXERCICIO 5 - PARTE II - CRIAR UMA FUNÇÃO QUE RECEBA UM ARRAY E RETORNE O INTEIRO QUE MAIS SE REPETE.
 
-function numberRepeat (arrayNumbers){
+/*function numberRepeat (arrayNumbers){
 
   let number;
   let index;
@@ -117,7 +117,6 @@ function numberRepeat (arrayNumbers){
         if(number === arrayNumbers[j]){
           cont += 1;
         }
-        
         if (cont > repeat){
           mostRepeatNumber = number;
           repeat = cont;
@@ -129,4 +128,19 @@ function numberRepeat (arrayNumbers){
 
 let arrayTest = [2, 3, 2, 5, 8, 2, 3, 3, 5, 5, 5];
 let result = numberRepeat (arrayTest);
+console.log (result);*/
+
+// EXERCICIO 6 - PARTE II - CRIAR UMA FUNÇÃO QUE RECEBA UM NUMERO E RETORNE O SOMATÓRIO DE TODOS O NUMEROS ATÉ N.
+
+function summation (number){
+  
+  let sumNumber = 0;
+
+  for (let i = 1; i <= number; i += 1){
+    sumNumber = i + sumNumber;
+  }
+return sumNumber;
+}
+
+let result = summation(15);
 console.log (result);
