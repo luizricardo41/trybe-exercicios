@@ -74,7 +74,7 @@ console.log (result);*/
 
 // EXERCICIO 4 - PARTE II - CRIAR UMA FUNÇÃO QUE RECEBA UM ARRAY DE NOMES E RETORNAR O NOME COM MAIOR QUANTIDADE DE CARACTERES;
 
-function contCharacterNames (arrayNames){
+/*function contCharacterNames (arrayNames){
 
   let name;
   let contCharacter;
@@ -95,4 +95,38 @@ function contCharacterNames (arrayNames){
 
 let arrayTest = ['José', 'Francisco', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
 let result = contCharacterNames (arrayTest);
+console.log (result);*/
+
+// EXERCICIO 5 - PARTE II - CRIAR UMA FUNÇÃO QUE RECEBA UM ARRAY E RETORNE O INTEIRO QUE MAIS SE REPETE.
+
+function numberRepeat (arrayNumbers){
+
+  let number;
+  let index;
+  let cont;
+  let repeat = 0;
+  let mostRepeatNumber = 0;
+
+  for(let i = 0; i < arrayNumbers.length; i +=1){
+    number = arrayNumbers[i];
+    index = i;
+    cont = 0;
+
+      for (let j = 0; j < arrayNumbers.length; j += 1){
+
+        if(number === arrayNumbers[j]){
+          cont += 1;
+        }
+        
+        if (cont > repeat){
+          mostRepeatNumber = number;
+          repeat = cont;
+        }
+      }
+  }
+  return mostRepeatNumber;
+}
+
+let arrayTest = [2, 3, 2, 5, 8, 2, 3, 3, 5, 5, 5];
+let result = numberRepeat (arrayTest);
 console.log (result);
