@@ -132,7 +132,7 @@ console.log (result);*/
 
 // EXERCICIO 6 - PARTE II - CRIAR UMA FUNÇÃO QUE RECEBA UM NUMERO E RETORNE O SOMATÓRIO DE TODOS O NUMEROS ATÉ N.
 
-function summation (number){
+/*function summation (number){
   
   let sumNumber = 0;
 
@@ -143,4 +143,33 @@ return sumNumber;
 }
 
 let result = summation(15);
+console.log (result);*/
+
+// EXERCICIO 7 - PARTE II -CRIAR UMA FUNÇÃO QUE RECEBA DUAS STRINGS E VERIFICA SE UMA É O FINAL DA OUTRA.
+
+function wordEnding (word, ending) {
+
+  let j;
+  let auxWord = '';
+  let wordEnd = '';
+
+  if (ending.length < word.length){
+    
+    j = word.length;
+
+    for (let i = ending.length - 1; i >= 0; i -= 1){
+      j -= 1;
+      auxWord = auxWord.concat (word[j])
+    }
+    for (i = auxWord.length - 1; i >= 0; i -=1){
+      wordEnd = wordEnd.concat (auxWord[i]);
+    }
+  }
+  if (wordEnd === ending){
+    return true;
+  } else{
+  return false;
+}
+}
+let result = wordEnding ("senhordasestrelas", "telas");
 console.log (result);
