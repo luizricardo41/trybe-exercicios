@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html>
   <body>
     <header>
@@ -13,6 +13,29 @@
       document.getElementById("page-title").innerText = "Armagedom";
       document.getElementById("second-paragraph").innerText = "O filme é sensacional e com uma trilha sonora inesquecivel!";
       document.getElementById("subtitle").innerText = "Emocionante do inicio ao fim";
+    </script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p id="paragraph" class="twoParagraphs">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p id="second-paragraph" class="twoParagraphs">Segundo parágrafo!</p>
+    </header>
+    <script>
+      const paragraph = document.getElementById("paragraph");
+      paragraph.style.color = "red";
+      document.getElementById("page-title").innerText = "Armagedom";
+      document.getElementById("second-paragraph").innerText = "O filme é sensacional e com uma trilha sonora inesquecivel!";
+      document.getElementById("subtitle").innerText = "Emocionante do inicio ao fim";
+      const paragraphs = document.getElementsByClassName("twoParagraphs");
+      paragraphs[0].style.color= 'green';
+      const tag = document.getElementsByTagName('h4')[0];
+      tag.style.color = 'blue';
     </script>
   </body>
 </html>
