@@ -18,3 +18,7 @@ let tagP = document.createElement('p');
 tagP.innerText = "Paragrafo inserido no exercicio 4";
 sectionContent.appendChild(tagP);
 
+let mainContentLeft = document.querySelector('.main-content');
+let tagSectionLeft = document.createElement('section');
+tagSectionLeft.className = "left-content";
+mainContentLeft.appendChild(tagSectionLeft);
