@@ -13,3 +13,8 @@ let tagSection = document.createElement('section');
 tagSection.className = "center-content";
 mainContent.appendChild(tagSection);
 
+let sectionContent = document.querySelector('.center-content');
+let tagP = document.createElement('p');
+tagP.innerText = "Paragrafo inserido no exercicio 4";
+sectionContent.appendChild(tagP);
+
