@@ -33,3 +33,28 @@ let tagImg = document.createElement('img');
 tagImg.src = "https://picsum.photos/200";
 tagImg.id = "small-image";
 sectionLeft.appendChild(tagImg);
+
+let sectionRight = document.querySelector('.right-content');
+let tagUl = document.createElement('ul');
+sectionRight.appendChild(tagUl);
+
+let ulRight = document.querySelector('.right-content').firstChild;
+let numbers = {
+  1: 'Um',
+  2: 'Dois',
+  3: 'Três',
+  4: 'Quatro',
+  5: 'Cinco',
+  6: 'Seis',
+  7: 'Sete',
+  8: 'Oito',
+  9: 'Nove',
+  10: 'Dez',
+}
+for (index = 1; index <= 10; index += 1) {
+  let number = numbers[index];
+
+  let liRight = document.createElement('li');
+  liRight.innerText = number;
+  ulRight.appendChild(liRight);
+}
