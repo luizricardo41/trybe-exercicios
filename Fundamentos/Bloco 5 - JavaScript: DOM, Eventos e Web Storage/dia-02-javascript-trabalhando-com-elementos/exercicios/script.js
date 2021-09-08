@@ -8,3 +8,8 @@ let tagMain = document.createElement('main');
 tagMain.className = "main-content";
 bodyContentMain.appendChild(tagMain);
 
+let mainContent = document.querySelector('.main-content');
+let tagSection = document.createElement('section');
+tagSection.className = "center-content";
+mainContent.appendChild(tagSection);
+
