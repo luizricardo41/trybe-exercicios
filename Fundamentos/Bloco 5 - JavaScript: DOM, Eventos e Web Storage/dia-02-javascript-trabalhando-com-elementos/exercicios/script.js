@@ -27,3 +27,9 @@ let mainContentRight = document.querySelector('.main-content');
 let tagSectionRight = document.createElement('section');
 tagSectionRight.className = "right-content";
 mainContentRight.appendChild(tagSectionRight);
+
+let sectionLeft = document.querySelector('.left-content');
+let tagImg = document.createElement('img');
+tagImg.src = "https://picsum.photos/200";
+tagImg.id = "small-image";
+sectionLeft.appendChild(tagImg);
