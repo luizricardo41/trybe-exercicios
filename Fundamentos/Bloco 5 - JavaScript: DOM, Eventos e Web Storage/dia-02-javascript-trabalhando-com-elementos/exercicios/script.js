@@ -22,3 +22,8 @@ let mainContentLeft = document.querySelector('.main-content');
 let tagSectionLeft = document.createElement('section');
 tagSectionLeft.className = "left-content";
 mainContentLeft.appendChild(tagSectionLeft);
+
+let mainContentRight = document.querySelector('.main-content');
+let tagSectionRight = document.createElement('section');
+tagSectionRight.className = "right-content";
+mainContentRight.appendChild(tagSectionRight);
