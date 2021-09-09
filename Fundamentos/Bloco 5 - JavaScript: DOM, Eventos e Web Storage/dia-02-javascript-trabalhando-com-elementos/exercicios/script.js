@@ -59,6 +59,7 @@ for (index = 1; index <= 10; index += 1) {
 
   let liRight = document.createElement('li');
   liRight.innerText = number;
+  liRight.className = 'list';
   ulRight.appendChild(liRight);
 }
 
@@ -72,3 +73,11 @@ for (let index = 0; index < 3; index += 1){
 let removeChildMain = document.querySelector('.left-content');
 document.querySelector('.main-content').removeChild(removeChildMain);
 
+let contentList = document.querySelectorAll(".list");
+
+for (let i = 0; i < contentList.length; i += 1) {
+  let index = i;
+  if (index === 8 || index === 9){
+    contentList[index].parentNode.removeChild(contentList[index]);
+  }
+}
