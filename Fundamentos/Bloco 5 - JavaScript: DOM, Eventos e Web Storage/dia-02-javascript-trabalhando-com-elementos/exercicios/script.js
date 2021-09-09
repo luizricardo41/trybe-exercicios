@@ -66,3 +66,7 @@ for (let index = 0; index < 3; index += 1){
   tagH3.className = "description";
   mainTagH3.appendChild(tagH3);
 }
+
+let removeChildMain = document.querySelector('.left-content');
+document.querySelector('.main-content').removeChild(removeChildMain);
+
