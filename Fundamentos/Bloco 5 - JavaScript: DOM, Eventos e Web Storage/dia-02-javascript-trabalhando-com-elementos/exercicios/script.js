@@ -28,6 +28,7 @@ let mainContentRight = document.querySelector('.main-content');
 let tagSectionRight = document.createElement('section');
 tagSectionRight.className = "right-content";
 mainContentRight.appendChild(tagSectionRight);
+tagSectionRight.style.marginRight = 'auto';
 
 let sectionLeft = document.querySelector('.left-content');
 let tagImg = document.createElement('img');
