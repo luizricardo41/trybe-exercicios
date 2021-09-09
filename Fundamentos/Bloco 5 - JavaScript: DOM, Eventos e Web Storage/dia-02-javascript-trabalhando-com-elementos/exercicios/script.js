@@ -13,6 +13,7 @@ let mainContent = document.querySelector('.main-content');
 let tagSection = document.createElement('section');
 tagSection.className = "center-content";
 mainContent.appendChild(tagSection);
+tagSection.style.backgroundColor = "green";
 
 let sectionContent = document.querySelector('.center-content');
 let tagP = document.createElement('p');
