@@ -63,5 +63,6 @@ for (index = 1; index <= 10; index += 1) {
 let mainTagH3 = document.querySelector('.main-content');
 for (let index = 0; index < 3; index += 1){
   let tagH3 = document.createElement('h3');
+  tagH3.className = "description";
   mainTagH3.appendChild(tagH3);
 }
