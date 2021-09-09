@@ -1,5 +1,6 @@
 let bodyContent = document.querySelector('.content-body');
 let titleH1 = document.createElement('h1');
+titleH1.className = "title";
 titleH1.innerText = 'Exercício 5.2 - JavaScript DOM';
 bodyContent.appendChild(titleH1);
 
@@ -12,6 +13,7 @@ let mainContent = document.querySelector('.main-content');
 let tagSection = document.createElement('section');
 tagSection.className = "center-content";
 mainContent.appendChild(tagSection);
+tagSection.style.backgroundColor = "green";
 
 let sectionContent = document.querySelector('.center-content');
 let tagP = document.createElement('p');
@@ -27,6 +29,7 @@ let mainContentRight = document.querySelector('.main-content');
 let tagSectionRight = document.createElement('section');
 tagSectionRight.className = "right-content";
 mainContentRight.appendChild(tagSectionRight);
+tagSectionRight.style.marginRight = 'auto';
 
 let sectionLeft = document.querySelector('.left-content');
 let tagImg = document.createElement('img');
@@ -56,11 +59,25 @@ for (index = 1; index <= 10; index += 1) {
 
   let liRight = document.createElement('li');
   liRight.innerText = number;
+  liRight.className = 'list';
   ulRight.appendChild(liRight);
 }
 
 let mainTagH3 = document.querySelector('.main-content');
 for (let index = 0; index < 3; index += 1){
   let tagH3 = document.createElement('h3');
+  tagH3.className = "description";
   mainTagH3.appendChild(tagH3);
+}
+
+let removeChildMain = document.querySelector('.left-content');
+document.querySelector('.main-content').removeChild(removeChildMain);
+
+let contentList = document.querySelectorAll(".list");
+
+for (let i = 0; i < contentList.length; i += 1) {
+  let index = i;
+  if (index === 8 || index === 9){
+    contentList[index].parentNode.removeChild(contentList[index]);
+  }
 }
