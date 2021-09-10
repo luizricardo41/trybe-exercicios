@@ -32,12 +32,18 @@ let textBox = document.getElementById('input');
 textBox.addEventListener('keyup', newText)
 
 function newText () {
-  document.querySelector('.tech').innerText = textBox.value;
+  document.getElementsByClassName('tech')[0].innerText = textBox.value;
 }
 
 // 4. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
 // 4.1. Que tal redirecionar para seu portifólio?
+let cabecalho = document.getElementsByTagName('h1');
+cabecalho[0].addEventListener('dblclick', newPage);
+
+function newPage() {
+  window.open('https://luizricardo41.github.io/');
+}
 
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
