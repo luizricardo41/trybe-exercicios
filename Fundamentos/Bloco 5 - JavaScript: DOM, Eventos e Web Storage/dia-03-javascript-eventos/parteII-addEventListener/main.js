@@ -14,9 +14,9 @@ let selectFirst = document.querySelector('#first-li');
 let selectSecond = document.querySelector('#second-li');
 let selectThird = document.querySelector('#third-li');
 
-selectFirst.addEventListener('mouseover', selectElement);
-selectSecond.addEventListener('mouseover', selectElement);
-selectThird.addEventListener('mouseover', selectElement);
+selectFirst.addEventListener('click', selectElement);
+selectSecond.addEventListener('click', selectElement);
+selectThird.addEventListener('click', selectElement);
 
 function selectElement (event){
   const techClass = document.querySelector('.tech');
@@ -25,9 +25,15 @@ function selectElement (event){
 }
 
 
-
 // 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech';
+
+let textBox = document.getElementById('input');
+textBox.addEventListener('keyup', newText)
+
+function newText () {
+  document.querySelector('.tech').innerText = textBox.value;
+}
 
 // 4. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
@@ -47,7 +53,8 @@ function resetText(event) {
 }
 
 firstLi.addEventListener('dblclick', resetText);
-
+secondLi.addEventListener('dblclick', resetText);
+thirdLi.addEventListener('dblclick', resetText);
 // Não precisa passar o parâmetro dentro da callback resetText. O próprio
 // navegador fará esse trabalho por você, não é legal? Desse jeito, o
 // event.target na nossa função retornará o objeto 'firstLi'.
