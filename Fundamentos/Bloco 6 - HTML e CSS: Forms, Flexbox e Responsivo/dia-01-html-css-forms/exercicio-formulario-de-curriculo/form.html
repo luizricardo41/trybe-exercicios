@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulário de Cadastro de Curriculo</title>
+</head>
+<body>
+  <h1>Cadastro de Curriculo</h1>
+  <form method="GET">
+    <fieldset>
+      <label for="name">Nome: <input type="text" maxlength="40" required id="name"></label>
+      <label for="email">Email: <input type="text" maxlength="50" required id="email"></label>
+      <label for="cpf"></label> CPF: <input type="number" maxlength="11" required id="cpf"><br><br>
+      <label for="endereco">Endereço: <input type="text" maxlength="200" required id="endereco"></label>
+      <label for="cidade">Cidade: <input type="text" maxlength="28" required id="cidade"></label>
+      <label for="select-state">Estado: <select name="estado" id="select-state" required></label></select> 
+      <p>Tipo de moradia:</p>
+      <label for="tipo-casa">Casa<input type="radio" required id="tipo-casa" name="tipo-moradia" value="casa" checked></label>
+      <label for="tipo-ap">Apartamento<input type="radio" required id="tipo-ap" name="tipo-moradia" value="apartamento"></label>
+    </fieldset>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
