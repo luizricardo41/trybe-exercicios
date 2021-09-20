@@ -37,4 +37,13 @@ body {
   font-size: 1.3rem;
   list-style: none;
   margin-right: 10px;
+  display: flex;
+}
+
+.header-container nav {
+  order: 1;
+}
+
+.header-container section {
+  order: 0;
 }
