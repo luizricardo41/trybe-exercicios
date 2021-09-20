@@ -8,31 +8,61 @@
   <link rel="stylesheet" href="style.css">
   <title>Formulário de Cadastro de Curriculo</title>
 </head>
-<body>
-  <h1>Cadastro de Curriculo</h1>
+<body class="is-four-fifths">
+  <h1 class="title is-3">Cadastro de Curriculo</h1>
   <form method="GET">
-    <fieldset>
-      <label for="name">Nome: <input type="text" maxlength="40" required id="name"></label>
+    <fieldset class="block">
+      <label for="name">Nome: <input type="text" maxlength="40" id="name" required></label>
       <label for="email">Email: <input type="text" maxlength="50" required id="email"></label>
       <label for="cpf">CPF:<input type="text" maxlength="11" required id="cpf"></label><br><br>
       <label for="endereco">Endereço: <input type="text" maxlength="200" required id="endereco"></label>
       <label for="cidade">Cidade: <input type="text" maxlength="28" required id="cidade"></label>
-      <label for="select-state">Estado: <select name="estado" id="select-state" required ></select></label> 
+      <label for="select-state">Estado: <select name="estado" id="select-state" required ></select></label><br><br>
       <p id="moradia">Tipo de moradia:</p>
-      <label for="tipo-casa">Casa<input type="radio" required id="tipo-casa" name="tipo-moradia" value="Casa" checked></label>
-      <label for="tipo-ap">Apartamento<input type="radio" required id="tipo-ap" name="tipo-moradia" value="Apartamento"></label>
+      <label for="tipo-casa">Casa<input type="radio" required id="tipo-casa" name="tipo-moradia" value="Casa" checked class="radio"></label>
+      <label for="tipo-ap">Apartamento<input type="radio" required id="tipo-ap" name="tipo-moradia" value="Apartamento" class="radio"></label>
     </fieldset>
-    <fieldset>
-      <label for="resumo">Resumo do Curriculo:<br><textarea name="resumo-curriculo" id="resumo" cols="100" rows="10" maxlength="1000" required></textarea></label><br>
+    <fieldset class="block">
+      <label for="resumo">Resumo do Curriculo:
+        <div class="control">
+          <textarea name="resumo-curriculo" id="resumo" maxlength="1000" required class="textarea is-small is-primary">
+          </textarea>
+        </div>
+      </label><br> 
       <label for="cargo">Cargo: <input type="text" name="ultimo-cargo" maxlength="40" id="cargo"></label><br><br>
       <label for="descricao-cargo">Descrição do Cargo:<input type="text" name="descricao" id="descricao-cargo" required maxlength="500"></label><br><br>
-      <label for="data-inicio">Data de inicio:<input type="text" name="data" id="data-inicio" required maxlength="8"></label>
-    </fieldset><br>
+      <label for="datepicker">Data de inicio:<input type="text" name="data" id="datepicker" required maxlength="8" autocomplete="off"></label>
+    </fieldset>
     <button type="submit" id="enviar-dados">Enviar Curriculo</button>
     <button type="reset" id="reseta-dados">Resetar Dados</button>
   </form>
   <div id="consolidado">
   </div>
   <script src="script.js"></script>
+  <script>
+    const picker = new Pikaday({
+        field: document.getElementById('datepicker'),
+        format: 'D/M/YYYY',
+        minDate: new Date(1985, 01, 01),
+        maxDate: new Date(2021, 12, 31),
+        yearRange: [1980,2021],
+        toString(date, format) {
+            // you should do formatting based on the passed format,
+            // but we will just return 'D/M/YYYY' for simplicity
+            const day = date.getDate();
+            const month = date.getMonth() + 1;
+            const year = date.getFullYear();
+            return `${day}/${month}/${year}`;
+        },
+        parse(dateString, format) {
+            // dateString is the result of `toString` method
+            const parts = dateString.split('/');
+            const day = parseInt(parts[0], 10);
+            const month = parseInt(parts[1], 10) - 1;
+            const year = parseInt(parts[2], 10);
+            return new Date(year, month, day);
+        }
+    });
+  </script>
 </body>
 </html>
