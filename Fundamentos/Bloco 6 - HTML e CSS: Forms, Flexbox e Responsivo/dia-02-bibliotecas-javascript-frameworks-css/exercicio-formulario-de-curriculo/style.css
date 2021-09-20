@@ -18,6 +18,10 @@ label .radio {
   font-weight: normal;
 }
 
+.form-group {
+  display: inline;
+}
+
 /*!
  * Pikaday
  * Copyright © 2014 David Bushell | BSD & MIT license | https://dbushell.com/
@@ -247,7 +251,7 @@ http://nicolasgallagher.com/micro-clearfix-hack/
     border-bottom: none;
     cursor: help;
 }
-© 2021 GitHub, Inc.
+/* © 2021 GitHub, Inc.
 Terms
 Privacy
 Security
@@ -258,4 +262,4 @@ Pricing
 API
 Training
 Blog
-About
+About */
