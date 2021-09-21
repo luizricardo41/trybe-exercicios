@@ -1,8 +1,12 @@
+* {
+
+}
 body {
   font-size: large;
+  margin: 30px;
 }
 h1 {
-  font-size: 1.4em;
+  font-size: 1.5em;
 }
 h2 {
 
