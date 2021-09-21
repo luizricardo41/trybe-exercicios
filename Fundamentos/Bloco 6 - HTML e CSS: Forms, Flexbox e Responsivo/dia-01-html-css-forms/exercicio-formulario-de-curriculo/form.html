@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma-rtl.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
   <link rel="stylesheet" href="style.css">
   <title>Formulário de Cadastro de Curriculo</title>
 </head>
@@ -26,13 +28,13 @@
       <label for="resumo">Resumo do Curriculo:<br><textarea name="resumo-curriculo" id="resumo" cols="100" rows="10" maxlength="1000" required></textarea></label><br>
       <label for="cargo">Cargo: <input type="text" name="ultimo-cargo" maxlength="40" id="cargo"></label><br><br>
       <label for="descricao-cargo">Descrição do Cargo:<input type="text" name="descricao" id="descricao-cargo" required maxlength="500"></label><br><br>
-      <label for="data-inicio">Data de inicio:<input type="text" name="data" id="data-inicio" required maxlength="8"></label>
+      <label for="data-inicio">Data de inicio:<input type="text" name="data" id="data-inicio" required maxlength="8" autocomplete="off"></label>
     </fieldset><br>
     <button type="submit" id="enviar-dados">Enviar Curriculo</button>
     <button type="reset" id="reseta-dados">Resetar Dados</button>
   </form>
   <div id="consolidado">
   </div>
-  <script src="script.js"></script>
+  <script src="script.js" type="module"></script>
 </body>
 </html>
