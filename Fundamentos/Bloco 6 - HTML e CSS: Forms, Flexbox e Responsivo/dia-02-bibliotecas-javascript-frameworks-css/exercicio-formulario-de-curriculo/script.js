@@ -38,7 +38,6 @@ preecheEstados();
 
 function stopFlow(event) {
   event.preventDefault();
-  verificaData();
 }
 document.getElementById('enviar-dados').addEventListener('click', stopFlow);
 
@@ -60,7 +59,7 @@ document.getElementById('enviar-dados').addEventListener('click', stopFlow);
 //     inserirDadosValidos();
 //   }
 // }
-//document.getElementById('enviar-dados').onclick = function submitInfo() { verificaData(); };
+document.getElementById('enviar-dados').onclick = function submitInfo() { inserirDadosValidos(); };
 
 function inserirDadosValidos() {
   const insertContent = document.getElementsByTagName('label');
