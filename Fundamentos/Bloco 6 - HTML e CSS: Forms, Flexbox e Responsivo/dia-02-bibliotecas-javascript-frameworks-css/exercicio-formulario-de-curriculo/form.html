@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma-rtl.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulário de Cadastro de Curriculo</title>
+</head>
+<body>
+  <h1 class="title is-2">Cadastro de Curriculo</h1>
+  <form method="GET">
+    <fieldset class="box">
+      <div class="box1">
+        <label for="name">Nome:
+          <div class= "field control">
+            <input type="text" maxlength="40" required id="name">
+          </div>
+        </label>
+        <label for="email">Email:
+          <div class="control">
+            <input type="text" maxlength="50" required id="email">
+          </div> 
+        </label>
+        <label for="cpf">CPF:
+          <div class="control">
+            <input type="text" maxlength="11" required id="cpf">
+          </div> 
+        </label><br><br>
+      </div>
+      <div class="box2">
+        <label for="endereco">Endereço:
+          <div class="control"> 
+            <input type="text" maxlength="200" required id="endereco">
+          </div> 
+        </label>
+        <label for="cidade">Cidade:
+          <div class="control"> 
+            <input type="text" maxlength="28" required id="cidade">
+          </div> 
+        </label>
+        <label for="select-state">Estado:
+          <div class="">
+            <select name="estado" id="select-state" required></select>
+          </div> 
+        </label>
+      </div><br>
+      <div>
+        <p id="moradia">Tipo de moradia:</p>
+        <label for="tipo-casa">Casa
+          <input type="radio" required id="tipo-casa" name="tipo-moradia" value="Casa" checked class="radio">
+        </label>
+        <label for="tipo-ap">Apartamento
+          <input type="radio" required id="tipo-ap" name="tipo-moradia" value="Apartamento" class="radio">
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="box">
+      <label for="resumo">Resumo do Curriculo:<br>
+        <div class="control">
+          <textarea name="resumo-curriculo" id="resumo" cols="100" rows="10" maxlength="1000" required class="textarea is-info is-small"></textarea>
+        </div>
+      </label><br>
+      <label for="cargo">Cargo:
+        <input type="text" name="ultimo-cargo" maxlength="40" id="cargo">
+      </label><br><br>
+      <label for="descricao-cargo">Descrição do Cargo:
+        <input type="text" name="descricao" id="descricao-cargo" required maxlength="500">
+      </label><br><br>
+      <label for="data-inicio">Data de inicio:
+        <input type="text" name="data" id="data-inicio" required maxlength="8" autocomplete="off">
+      </label>
+    </fieldset><br>
+    <button type="submit" id="enviar-dados" class="button is-link">Enviar Curriculo</button>
+    <button type="reset" id="reseta-dados" class="button is-link">Resetar Dados</button>
+  </form>
+  <div id="consolidado">
+  </div>
+  <script src="script.js" type="module"></script>
+</body>
+</html>
