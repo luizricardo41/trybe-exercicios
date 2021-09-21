@@ -84,8 +84,8 @@ p strong {
   }  
 }
 
-@media screen and (min-width: 650px) and (max-width: 950px) {
-  .card:nth-child(3) {
-    display: none;
+@media screen and (max-width: 500px) {
+  p.trick {
+    color: #525252;
   }  
 }
