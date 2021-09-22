@@ -4,3 +4,65 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+header {
+  background-color: aqua;
+}
+
+body {
+  background-color: cadetblue;
+}
+
+footer {
+  background-color: aqua;
+  padding: 10px 10px;
+  margin-top: 40px;
+}
+
+h3 {
+  margin: 0;
+}
+
+article {
+  margin-bottom: 30px;
+}
+
+nav ul {
+  margin: 5px;
+  padding: 0;
+}
+
+@media screen and (max-width: 650px) {
+  header p {
+    font-size: 1.6em;
+    text-align: center;
+    margin: 10px;
+    font-weight: 800;
+  }
+  header ul {
+    display: none;
+  }
+  h2 {
+    font-size: 1.4em;
+    text-align: center;
+  }
+  .aside-two h2 {
+    margin-top: 25px;
+  }
+  .aside-one ul , .aside-two ul {
+    font-size: 1.1em;
+    margin-bottom: 25px;
+  }
+  h1 {
+    font-size: 1.8em;
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  .container {
+    margin: 20px;
+  }
+  article , footer {
+    font-size: 1.1em;
+  }
+}
