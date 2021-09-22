@@ -115,3 +115,56 @@ nav ul {
     margin: 50px;
   }
 }
+
+@media screen and (min-width: 1000px) {
+  .asides {
+    display: flex;
+    justify-content: space-around;
+  }
+  header p {
+    font-size: 2em;
+    text-align: center;
+    margin: 0 10px;
+    font-weight: 800;
+  }
+  header ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  h2 {
+    font-size: 1.6em;
+    text-align: center;
+    margin: 5px 5px;
+  }
+  .chapter {
+    display: flex;
+    max-width: 400px;
+    flex-direction: column;
+    margin: 0 50px;
+  }
+  .information {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+  }
+
+  .aside-one ul , .aside-two ul {
+    font-size: 1.3em;
+    margin-bottom: 25px;
+  }
+  h1 {
+    font-size: 1.8em;
+    text-align: center;
+    margin-top: 25px;
+  }
+  hr {
+    display: none;
+  }
+  .container {
+    margin: 20px;
+  }
+  article , footer {
+    font-size: 1.3em;
+    margin: 50px;
+  }
+}
