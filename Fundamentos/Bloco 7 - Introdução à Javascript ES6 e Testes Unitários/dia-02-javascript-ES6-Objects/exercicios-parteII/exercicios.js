@@ -18,14 +18,14 @@ const lesson3 = {
   turno: 'noite',
 };
 
-const addTurno = () => {
-  const turnoNoite = {
-    turno: 'noite'
-  }
-  Object.assign(lesson2, turnoNoite);
-  // console.log(lesson2);
-}
-addTurno();
+// const addTurno = () => {
+//   const turnoNoite = {
+//     turno: 'noite'
+//   }
+//   Object.assign(lesson2, turnoNoite);
+//   // console.log(lesson2);
+// }
+// addTurno();
 
 // const listaKeys = () => {
 //   console.log(Object.keys(lesson2));
@@ -44,13 +44,25 @@ addTurno();
 // listaValues();
 
 
-const allLessons = Object.assign({}, { lesson1, lesson2, lesson3 });
+// const allLessons = Object.assign({}, { lesson1, lesson2, lesson3 });
 
-console.log(allLessons);
+// console.log(allLessons);
 
-const totalAlunos = allLessons.lesson1.numeroEstudantes + allLessons.lesson2.numeroEstudantes + allLessons.lesson3.numeroEstudantes;
-console.log(totalAlunos);
+// const totalAlunos = allLessons.lesson1.numeroEstudantes + allLessons.lesson2.numeroEstudantes + allLessons.lesson3.numeroEstudantes;
+// console.log(totalAlunos);
 
-const valueKey = (obj, number) => Object.values(obj)[number];
+// const valueKey = (obj, number) => Object.values(obj)[number];
 
-console.log(valueKey(lesson2, 3));
+// console.log(valueKey(lesson2, 3));
+
+const verifyPair = (obj, key, value) => {
+  const tamanho = Object.keys(obj).length
+  let teste = false;
+  for (i = 0; i < tamanho; i += 1) {
+    if (Object.keys(obj)[i] === key && Object.values(obj)[i] === value) {
+      teste = true;
+    } 
+  }
+  return teste;
+}
+console.log(verifyPair(lesson1, 'turno', 'noite'));
