@@ -47,3 +47,10 @@ addTurno();
 const allLessons = Object.assign({}, { lesson1, lesson2, lesson3 });
 
 console.log(allLessons);
+
+const totalAlunos = allLessons.lesson1.numeroEstudantes + allLessons.lesson2.numeroEstudantes + allLessons.lesson3.numeroEstudantes;
+console.log(totalAlunos);
+
+const valueKey = (obj, number) => Object.values(obj)[number];
+
+console.log(valueKey(lesson2, 3));
