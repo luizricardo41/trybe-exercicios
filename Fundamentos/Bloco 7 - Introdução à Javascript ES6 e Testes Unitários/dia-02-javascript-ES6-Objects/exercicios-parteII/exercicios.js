@@ -17,3 +17,28 @@ const lesson3 = {
   professor: 'Maria Clara',
   turno: 'noite',
 };
+
+// const addTurno = () => {
+//   const turnoNoite = {
+//     turno: 'noite'
+//   }
+//   Object.assign(lesson2, turnoNoite);
+//   console.log(lesson2);
+// }
+// addTurno();
+
+// const listaKeys = () => {
+//   console.log(Object.keys(lesson2));
+// }
+// listaKeys();
+
+// const sizeObject = () => {
+//   const sizeObj = Object.keys(lesson3).length;
+//   console.log(sizeObj);
+// }
+// sizeObject();
+
+const listaValues = () => {
+  console.log(Object.values(lesson3));
+}
+listaValues();
