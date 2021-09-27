@@ -18,14 +18,14 @@ const lesson3 = {
   turno: 'noite',
 };
 
-// const addTurno = () => {
-//   const turnoNoite = {
-//     turno: 'noite'
-//   }
-//   Object.assign(lesson2, turnoNoite);
-//   console.log(lesson2);
-// }
-// addTurno();
+const addTurno = () => {
+  const turnoNoite = {
+    turno: 'noite'
+  }
+  Object.assign(lesson2, turnoNoite);
+  // console.log(lesson2);
+}
+addTurno();
 
 // const listaKeys = () => {
 //   console.log(Object.keys(lesson2));
@@ -38,7 +38,12 @@ const lesson3 = {
 // }
 // sizeObject();
 
-const listaValues = () => {
-  console.log(Object.values(lesson3));
-}
-listaValues();
+// const listaValues = () => {
+//   console.log(Object.values(lesson3));
+// }
+// listaValues();
+
+
+const allLessons = Object.assign({}, { lesson1, lesson2, lesson3 });
+
+console.log(allLessons);
