@@ -8,6 +8,7 @@ describe('function sum', () => {
     expect(0).toBe(sum(0, 0));
   });
   it ('error when string is sent', () => {
+    expect(() => { sum ('a')}).toThrow();
     expect(() => { sum ('a')}).toThrow('parameters must be numbers');
   });
 });
