@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contar cliques</title>
+</head>
+<body>
+  <h1>Clique no botão</h1>
+  <button class="counter">Clique aqui</button>
+  <p>Quantidade de cliques: <span class="amount"></span></p>
+  <script>
+  let clickCount = 0;
+  const clickMe = () => {
+  clickCount += 1;
+  document.querySelector('.amount').innerText = `${clickCount}`;
+}
+document.querySelector('button').addEventListener('click', clickMe);
+
+  </script>
+</body>
+</html>
