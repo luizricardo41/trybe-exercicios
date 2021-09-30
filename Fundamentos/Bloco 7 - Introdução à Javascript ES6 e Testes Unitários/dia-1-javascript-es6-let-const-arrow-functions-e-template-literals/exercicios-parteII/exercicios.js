@@ -22,4 +22,40 @@
 //   return biggerWord;
 // }
 // console.log(longestWord('Antônio foi no banheiro e não sabemos o que aconteceu'))
- 
+
+const arraySkills = ['HTML', 'CSS', 'FlexBox', 'DOM', 'Git']
+const searchLetterX = (str) => {
+  let determinatedString = 'Tryber x aqui!';
+  let splitWord = determinatedString.split('');
+  let newString;
+  for (index = 0; index < splitWord.length; index += 1) {
+    if (splitWord[index] === 'x') {
+      newString = splitWord.splice(index, 1, `${str}`);
+    }
+  }
+  splitWord = splitWord.join((''));
+  return splitWord;
+}
+
+const secondFunction = (str2) => {
+  let result2 = `${str2} 
+  
+  Minhas cinco principais habilidades são:`;
+
+  arraySkills.sort();
+
+  arraySkills.forEach((skill) =>
+    result2 = `${result2} 
+    
+    - ${skill}`);
+    
+    result2 = `
+    ${result2}
+    
+    #goTrybe
+    `;
+
+    return result2;
+}
+
+console.log(secondFunction(searchLetterX('Luiz Ricardo')));
