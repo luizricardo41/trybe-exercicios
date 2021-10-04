@@ -22,17 +22,42 @@
 
 // Exercicio 2
 
-const drawNumber = (number, action) => {
-  const dNumber = Math.round((Math.random() * 5) + 1);
-  action(number, dNumber);
-  return action(number, dNumber);
-};
+// const drawNumber = (number, action) => {
+//   const dNumber = Math.round((Math.random() * 5) + 1);
+//   action(number, dNumber);
+//   return action(number, dNumber);
+// };
 
-const checkNumber = (number, dNumber) => {
-  if (number === dNumber) {
-    return `Parabens, você ganhou!! ${dNumber}`;
-  }
-  return `Tente novamente  ${dNumber}`;
+// const checkNumber = (number, dNumber) => {
+//   if (number === dNumber) {
+//     return `Parabens, você ganhou!! ${dNumber}`;
+//   }
+//   return `Tente novamente  ${dNumber}`;
+// }
+
+// console.log(drawNumber(5, checkNumber));
+
+// Exercicio 3 
+
+const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+
+const testResult = (gabarito, respostas, callback) => {
+  callback(gabarito, respostas);
+  return `Resultado: ${callback(gabarito, respostas)} respostas corretas`;
 }
 
-console.log(drawNumber(5, checkNumber));
+const verificaRespostas = (gabarito, respostas) => {
+  let respostasCertas = 0;
+  for (let index = 0; index < gabarito.length; index += 1){
+    if (respostas[index] === 'N.A') {
+    } else if (gabarito[index] === respostas[index]){
+      respostasCertas += 1;
+    } else {
+      respostasCertas -= 0.5;
+    }
+  }
+  return respostasCertas;
+}
+
+console.log(testResult(['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'], ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'], verificaRespostas));
