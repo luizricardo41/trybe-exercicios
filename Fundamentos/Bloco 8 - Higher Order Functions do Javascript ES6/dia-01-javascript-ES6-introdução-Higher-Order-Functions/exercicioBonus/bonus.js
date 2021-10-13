@@ -33,4 +33,18 @@ const warriorDamage = (warrior) => {
   return warriorAttack;
 }
 
-console.log(warriorDamage(warrior));
+const mageDamage = (mage) => {
+  const { intelligence } = mage;
+  const max = intelligence * 2;
+  let mana = mage.mana;
+  const damageMana = {};
+  if (mana < 15) {
+    return `Não possui mana suficiente`;
+  } else {
+  const mageAttack = Math.floor(Math.random() * (max - intelligence + 1)) + intelligence;
+  mana -= 15;
+  damageMana['mana'] = mana;
+  damageMana['damage'] = mageAttack; 
+  return damageMana;
+  }
+}
