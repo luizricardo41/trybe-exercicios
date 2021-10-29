@@ -1,0 +1,11 @@
+#root {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.pokemon {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  border: solid 2px black;
+}
