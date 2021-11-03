@@ -6,9 +6,11 @@ class Pokemon extends React.Component {
 
     return (
       <div className="pokemon">
-        <p>Nome: {name}</p>
-        <p>Tipo: {type}</p>
-        <p>Peso médio: {peso}</p>
+        <div>
+          <p>Nome: {name}</p>
+          <p>Tipo: {type}</p>
+          <p>Peso médio: {peso}</p>
+        </div>
         <img src = {image} className="image" alt="" />
       </div>
     );
