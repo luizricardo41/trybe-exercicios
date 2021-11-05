@@ -1,4 +1,5 @@
 import React from 'react';
+import arrayEstados from './Data'
 
 class Form extends React.Component {
   render() {
@@ -30,7 +31,10 @@ class Form extends React.Component {
             </label>
             <label>
               Estado:
-              <select name="estado"></select>
+              <select name="estado">
+                {arrayEstados.map((estado) => 
+                <option value={estado} key={estado}>{estado}</option>)}
+              </select>
             </label>
           </div>
           <div className="dadosTipo">
