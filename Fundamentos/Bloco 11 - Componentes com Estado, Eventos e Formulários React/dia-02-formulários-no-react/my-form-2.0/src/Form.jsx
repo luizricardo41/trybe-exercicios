@@ -1,4 +1,5 @@
 import React from 'react';
+import Compilado from './Compilado';
 import arrayEstados from './Data'
 
 class Form extends React.Component {
@@ -17,6 +18,8 @@ class Form extends React.Component {
       resumo: '',
       cargo: '',
       descricaoCargo: '',
+      submited: false,
+      dados: {},
     }
   }
 
@@ -27,6 +30,31 @@ class Form extends React.Component {
         [name]: value,
       })
     }
+  
+  renderCompilado = () => {(
+    this.setState({
+      dados: this.state,
+      submited: true,
+      nome: '',
+      email: '',
+      cpf: 0,
+      endereco: '',
+      cidade: '',
+      estado: '',
+      moradia: '',
+      resumo: '',
+      cargo: '',
+      descricaoCargo: '',
+    })
+  )
+  };
+  
+  resetData = () => {
+    this.setState({
+      dados: '',
+      submited: false,
+    })
+  }
 
   render() {
     return (
@@ -164,6 +192,10 @@ class Form extends React.Component {
             </label>
           </div>
         </fieldset>
+        <button onClick={() => this.renderCompilado()}>Enviar Curriculo</button>
+        <button onClick={() => this.resetData()}>Resetar Dados</button>
+
+        {this.state.submited && <Compilado dados={ this.state.dados }/>}
       </>
     );
   }
