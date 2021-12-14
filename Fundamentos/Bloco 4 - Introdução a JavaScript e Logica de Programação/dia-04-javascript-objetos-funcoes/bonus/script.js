@@ -143,6 +143,7 @@
 
 // console.log(amountFruits(basket));
 
+
 let moradores = {
   blocoUm: [
     {
@@ -174,5 +175,27 @@ let moradores = {
   ],
 };
 
-console.log(`"O morador do bloco 2 de nome ${moradores.blocoDois[1].nome} ${moradores.blocoDois[1].sobrenome}
-mora no ${moradores.blocoDois[1].andar}º andar, apartamento ${moradores.blocoDois[1].apartamento}"`)
+// -->> Exercicio 4
+
+// console.log(`"O morador do bloco 2 de nome ${moradores.blocoDois[1].nome} ${moradores.blocoDois[1].sobrenome}
+// mora no ${moradores.blocoDois[1].andar}º andar, apartamento ${moradores.blocoDois[1].apartamento}"`)
+
+
+// -->> Exercicio 5
+
+function blocoUm() {
+  const moradoresLen = moradores.blocoUm.length;
+  for (let index = 0; index < moradoresLen; index += 1) {
+    console.log(`Nome: ${moradores.blocoUm[index].nome} ${moradores.blocoUm[index].sobrenome}`);
+  }
+}
+blocoUm();
+
+function blocoDois() {
+  const moradoresLen = moradores.blocoDois.length;
+  for (let index = 0; index < moradoresLen; index += 1) {
+    console.log(`Nome: ${moradores.blocoDois[index].nome} ${moradores.blocoDois[index].sobrenome}`);
+  }
+}
+blocoDois();
+
