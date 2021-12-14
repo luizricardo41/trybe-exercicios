@@ -102,43 +102,77 @@
 // console.log(evenNum(vector));
 
 
-// Exercicio 3 
+// // Exercicio 3 
 
-const basket = [
-  'Melancia', 'Abacate', 'Melancia', 'Melancia', 'Uva', 'Laranja',
-  'Jaca', 'Pera', 'Melancia', 'Uva', 'Laranja', 'Melancia',
-  'Banana', 'Uva', 'Pera', 'Abacate', 'Laranja', 'Abacate',
-  'Banana', 'Melancia', 'Laranja', 'Laranja', 'Jaca', 'Uva',
-  'Banana', 'Uva', 'Laranja', 'Pera', 'Melancia', 'Uva',
-  'Jaca', 'Banana', 'Pera', 'Abacate', 'Melancia', 'Melancia',
-  'Laranja', 'Pera', 'Banana', 'Jaca', 'Laranja', 'Melancia',
-  'Abacate', 'Abacate', 'Pera', 'Melancia', 'Banana', 'Banana',
-  'Abacate', 'Uva', 'Laranja', 'Banana', 'Abacate', 'Uva',
-  'Uva', 'Abacate', 'Abacate', 'Melancia', 'Uva', 'Jaca',
-  'Uva', 'Banana', 'Abacate', 'Banana', 'Uva', 'Banana',
-  'Laranja', 'Laranja', 'Jaca', 'Jaca', 'Abacate', 'Jaca',
-  'Laranja', 'Melancia', 'Pera', 'Jaca', 'Melancia', 'Uva',
-  'Abacate', 'Jaca', 'Jaca', 'Abacate', 'Uva', 'Laranja',
-  'Pera', 'Melancia', 'Jaca', 'Pera', 'Laranja', 'Jaca',
-  'Pera', 'Melancia', 'Jaca', 'Banana', 'Laranja', 'Jaca',
-  'Banana', 'Pera', 'Abacate', 'Uva',
-];
+// const basket = [
+//   'Melancia', 'Abacate', 'Melancia', 'Melancia', 'Uva', 'Laranja',
+//   'Jaca', 'Pera', 'Melancia', 'Uva', 'Laranja', 'Melancia',
+//   'Banana', 'Uva', 'Pera', 'Abacate', 'Laranja', 'Abacate',
+//   'Banana', 'Melancia', 'Laranja', 'Laranja', 'Jaca', 'Uva',
+//   'Banana', 'Uva', 'Laranja', 'Pera', 'Melancia', 'Uva',
+//   'Jaca', 'Banana', 'Pera', 'Abacate', 'Melancia', 'Melancia',
+//   'Laranja', 'Pera', 'Banana', 'Jaca', 'Laranja', 'Melancia',
+//   'Abacate', 'Abacate', 'Pera', 'Melancia', 'Banana', 'Banana',
+//   'Abacate', 'Uva', 'Laranja', 'Banana', 'Abacate', 'Uva',
+//   'Uva', 'Abacate', 'Abacate', 'Melancia', 'Uva', 'Jaca',
+//   'Uva', 'Banana', 'Abacate', 'Banana', 'Uva', 'Banana',
+//   'Laranja', 'Laranja', 'Jaca', 'Jaca', 'Abacate', 'Jaca',
+//   'Laranja', 'Melancia', 'Pera', 'Jaca', 'Melancia', 'Uva',
+//   'Abacate', 'Jaca', 'Jaca', 'Abacate', 'Uva', 'Laranja',
+//   'Pera', 'Melancia', 'Jaca', 'Pera', 'Laranja', 'Jaca',
+//   'Pera', 'Melancia', 'Jaca', 'Banana', 'Laranja', 'Jaca',
+//   'Banana', 'Pera', 'Abacate', 'Uva',
+// ];
 
-function amountFruits(array) {
-  const arrayLen = array.length;
-  const objFruits = {};
-  for (let index = 0; index < arrayLen; index += 1) {
-    let fruit = basket[index];
-    let count = 0;
-    if (!objFruits[fruit]) {
-      for (let index2 = 0; index2 < arrayLen; index2 += 1) {
-        if (basket[index] === basket[index2]) count += 1;
-      }
-      objFruits[fruit] = count;
-    }
-  }
-  return `Sua cesta possui: ${objFruits.Melancia} Melancias, ${objFruits.Uva} Uvas, ${objFruits.Laranja} Laranjas,
-${objFruits.Jaca} Jacas, ${objFruits.Pera} Peras, ${objFruits.Banana} Bananas, ${objFruits.Abacate} Abacates!`;
-}
+// function amountFruits(array) {
+//   const arrayLen = array.length;
+//   const objFruits = {};
+//   for (let index = 0; index < arrayLen; index += 1) {
+//     let fruit = basket[index];
+//     let count = 0;
+//     if (!objFruits[fruit]) {
+//       for (let index2 = 0; index2 < arrayLen; index2 += 1) {
+//         if (basket[index] === basket[index2]) count += 1;
+//       }
+//       objFruits[fruit] = count;
+//     }
+//   }
+//   return `Sua cesta possui: ${objFruits.Melancia} Melancias, ${objFruits.Uva} Uvas, ${objFruits.Laranja} Laranjas,
+// ${objFruits.Jaca} Jacas, ${objFruits.Pera} Peras, ${objFruits.Banana} Bananas, ${objFruits.Abacate} Abacates!`;
+// }
 
-console.log(amountFruits(basket));
+// console.log(amountFruits(basket));
+
+let moradores = {
+  blocoUm: [
+    {
+      nome: 'Luiza',
+      sobrenome: 'Guimarães',
+      andar: 10,
+      apartamento: 1005,
+    },
+    {
+      nome: 'William',
+      sobrenome: 'Albuquerque',
+      andar: 5,
+      apartamento: 502,
+    },
+  ],
+  blocoDois: [
+    {
+      nome: 'Murilo',
+      sobrenome: 'Ferraz',
+      andar: 8,
+      apartamento: 804,
+    },
+    {
+      nome: 'Zoey',
+      sobrenome: 'Brooks',
+      andar: 1,
+      apartamento: 101,
+    },
+  ],
+};
+
+console.log(`"O morador do bloco 2 de nome ${moradores.blocoDois[1].nome} ${moradores.blocoDois[1].sobrenome}
+mora no ${moradores.blocoDois[1].andar}º andar, apartamento ${moradores.blocoDois[1].apartamento}"`)
