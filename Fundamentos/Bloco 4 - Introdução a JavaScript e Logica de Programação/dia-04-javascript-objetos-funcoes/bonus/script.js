@@ -48,33 +48,55 @@
 // }
 // console.log(verifyNum('mcmxciv'));
 
-const numerosRomanos = {
-  i: 1,
-  v: 5,
-  x: 10,
-  l: 50,
-  c: 100,
-  d: 500,
-  m: 1000,
-};
+// Resolução do exercicio 1 dos bonus; (Resolução retirada dos gabaritos)
 
-function romanoParaDecimal(numero) {
-  numero = numero.toLowerCase();
-  const len = numero.length;
-  let soma = numerosRomanos[numero[len - 1]];
-  let atual = numerosRomanos[numero[len - 1]];
-  for (let i = 2; i <= len; i += 1) {
-    const prox = numerosRomanos[numero[len - i]];
-    if (atual <= prox) {
-      soma += prox;
-    } else {
-      soma -= prox;
-    }
-    atual = prox;
-  }
-  return soma;
-}
+// const numerosRomanos = {
+//   i: 1,
+//   v: 5,
+//   x: 10,
+//   l: 50,
+//   c: 100,
+//   d: 500,
+//   m: 1000,
+// };
 
-console.log(romanoParaDecimal('mcmxciv')); // 2018
+// function romanoParaDecimal(numero) {
+//   numero = numero.toLowerCase();
+//   const len = numero.length;
+//   let soma = numerosRomanos[numero[len - 1]];
+//   let atual = numerosRomanos[numero[len - 1]];
+//   for (let i = 2; i <= len; i += 1) {
+//     const prox = numerosRomanos[numero[len - i]];
+//     if (atual <= prox) {
+//       soma += prox;
+//     } else {
+//       soma -= prox;
+//     }
+//     atual = prox;
+//   }
+//   return soma;
+// }
+
+// console.log(romanoParaDecimal('mcmxciv')); // 2018
 // console.log(romanoParaDecimal('VI')); // 6
 // console.log(romanoParaDecimal('IV')); // 4
+
+
+// Exercicio 2
+
+let vector = [[1, 2], [3, 4, 5, 6], [7, 8, 9, 10]];
+
+function evenNum(vector) {
+  const vectorLen = vector.length;
+  let newArray = [];
+  for (let index = 0; index < vectorLen; index += 1) {
+    for (let index2 = 0; index2 < vector[index].length; index2 += 1) {
+      if (vector[index][index2] % 2 === 0) {
+        newArray.push(vector[index][index2]);
+      }
+    }
+  }
+  return newArray;
+}
+
+console.log(evenNum(vector));
