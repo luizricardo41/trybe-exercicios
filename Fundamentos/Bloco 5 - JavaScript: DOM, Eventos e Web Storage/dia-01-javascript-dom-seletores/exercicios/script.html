@@ -66,6 +66,11 @@
 
        const tagH1 = document.getElementsByTagName('h1');
        tagH1[0].innerText = 'Exercício 5.1 - JavaScript';
+
+       for (let index = 0; index < tagP.length; index += 1) {
+        const upperCase = tagP[index].innerText.toUpperCase();
+        tagP[index].innerText = upperCase;
+       }
     </script>
   </body>
 </html>
