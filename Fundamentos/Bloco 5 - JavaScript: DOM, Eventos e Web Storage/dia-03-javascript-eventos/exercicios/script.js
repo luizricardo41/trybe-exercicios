@@ -98,3 +98,13 @@ function addTask(text) {
 }
 
 addTask('Revisar Aulas');
+
+function addColorTask(color) {
+  const myTasksDiv = document.querySelector('.my-tasks');
+  const divColor = document.createElement('div');
+  myTasksDiv.appendChild(divColor);
+  divColor.classList.add('task')
+  divColor.style.backgroundColor = color;
+}
+
+addColorTask('green');
