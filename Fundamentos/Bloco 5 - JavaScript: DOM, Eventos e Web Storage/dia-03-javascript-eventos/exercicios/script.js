@@ -89,3 +89,12 @@ for (let index = 0; index < day.length; index += 1) {
   day[index].addEventListener('mouseover', zoomOver);
   day[index].addEventListener('mouseout', zoomOut);
 }
+
+function addTask(text) {
+  const myTasksDiv = document.querySelector('.my-tasks');
+  const spanTask = document.createElement('span');
+  myTasksDiv.appendChild(spanTask);
+  spanTask.innerText = text;
+}
+
+addTask('Revisar Aulas');
