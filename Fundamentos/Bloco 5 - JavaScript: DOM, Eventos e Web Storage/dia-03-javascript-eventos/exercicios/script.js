@@ -125,4 +125,23 @@ function colorTask(event) {
   }
 }
 
+function addCommitment() {
+  const text = document.querySelector('#task-input');
+  if (!text.value) {
+    alert('Digite um compromisso para adicioná-lo ao calendário!');
+  } else {
+    const tagUl = document.querySelector('.task-list');
+    const tagLi = document.createElement('li');
+    tagUl.appendChild(tagLi);
+    tagLi.innerText = text.value;
+  }
+}
 
+const buttonAdd = document.querySelector('#btn-add');
+buttonAdd.addEventListener('click', addCommitment);
+
+function pressEnter(event) {
+  addCommitment();
+}
+const keyboard = document.querySelector('#task-input');
+keyboard.addEventListener('change', pressEnter)
