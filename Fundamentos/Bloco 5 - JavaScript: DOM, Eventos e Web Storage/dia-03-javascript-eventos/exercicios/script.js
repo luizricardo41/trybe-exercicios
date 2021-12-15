@@ -29,7 +29,7 @@ function createDaysOfMonth () {
       daysList.classList.add('holiday');
     } 
     if (days === 4 || days === 11 || days === 18 || days === 25){
-      daysList.classList.add('fryday');
+      daysList.classList.add('friday');
     }
   }
 }
@@ -57,3 +57,22 @@ function colorHoliday() {
 
 const buttonHoliday = document.querySelector('.btn-holiday');
 buttonHoliday.addEventListener('click', colorHoliday);
+
+
+function modifyText() {
+  const fridays = document.querySelectorAll('.friday');
+  if (fridays[0].innerText.length <= 2) {
+    for (let index = 0; index < fridays.length; index += 1) {
+    fridays[index].innerHTML = 'Sextou';
+    } 
+  } else {
+    const array = [4, 11, 18, 25];
+    for (let index = 0; index < fridays.length; index += 1) {
+      fridays[index].innerHTML = array[index];
+    }
+  }
+}
+
+const buttonFriday = document.querySelector('.btn-friday');
+buttonFriday.addEventListener('click', modifyText);
+
