@@ -76,3 +76,16 @@ function modifyText() {
 const buttonFriday = document.querySelector('.btn-friday');
 buttonFriday.addEventListener('click', modifyText);
 
+function zoomOver(event) {
+  event.target.style.fontSize = '30px'
+}
+
+function zoomOut(event) {
+  event.target.style.fontSize = '20px'
+}
+
+const day = document.querySelectorAll('.day');
+for (let index = 0; index < day.length; index += 1) {
+  day[index].addEventListener('mouseover', zoomOver);
+  day[index].addEventListener('mouseout', zoomOut);
+}
