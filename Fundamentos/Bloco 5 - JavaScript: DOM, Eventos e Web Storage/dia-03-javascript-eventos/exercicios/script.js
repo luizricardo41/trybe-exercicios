@@ -125,7 +125,7 @@ function colorTask(event) {
   }
 }
 
-function addCommitment() {
+function addCommitment(event) {
   const text = document.querySelector('#task-input');
   if (!text.value) {
     alert('Digite um compromisso para adicioná-lo ao calendário!');
@@ -140,8 +140,11 @@ function addCommitment() {
 const buttonAdd = document.querySelector('#btn-add');
 buttonAdd.addEventListener('click', addCommitment);
 
-function pressEnter(event) {
-  addCommitment();
-}
 const keyboard = document.querySelector('#task-input');
-keyboard.addEventListener('change', pressEnter)
+keyboard.addEventListener('change', addCommitment);
+
+// function pressEnter(event) {
+//   addCommitment();
+// }
+// const keyboard = document.querySelector('#task-input');
+// keyboard.addEventListener('change', pressEnter)
