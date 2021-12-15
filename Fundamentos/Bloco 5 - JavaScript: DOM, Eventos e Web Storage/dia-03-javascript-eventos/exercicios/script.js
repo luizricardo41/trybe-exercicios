@@ -13,9 +13,6 @@ function createDaysOfTheWeek() {
 
 createDaysOfTheWeek();
 
-// Escreva seu código abaixo.
-
-
 function createDaysOfMonth () {
   const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
   let daysOfMonth = document.getElementById('days');
@@ -87,6 +84,7 @@ function zoomOut(event) {
 const day = document.querySelectorAll('.day');
 for (let index = 0; index < day.length; index += 1) {
   day[index].addEventListener('mouseover', zoomOver);
+  day[index].addEventListener('click', colorTask);
   day[index].addEventListener('mouseout', zoomOut);
 }
 
@@ -108,3 +106,23 @@ function addColorTask(color) {
 }
 
 addColorTask('green');
+
+function selected(event) {
+  event.target.classList.value === 'task'
+    ? event.target.classList.add('selected')
+    : event.target.classList.remove('selected');
+}
+
+const taskSelect = document.querySelector('.task')
+taskSelect.addEventListener('click', selected);
+
+function colorTask(event) {
+  const color = document.querySelector('.selected') && document.querySelector('.selected').style.backgroundColor;
+  if (event.target.style.color === color) {
+    event.target.style.color = 'rgb(119, 119, 119)'; 
+  } else {
+    event.target.style.color = color;
+  }
+}
+
+
