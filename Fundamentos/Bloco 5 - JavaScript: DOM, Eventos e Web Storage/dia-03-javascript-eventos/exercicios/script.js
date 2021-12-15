@@ -38,10 +38,22 @@ createDaysOfMonth();
 
 function createButton(text) {
   let divButton = document.getElementsByClassName('buttons-container');
-  let buttonHoliday = document.createElement('button');
-  buttonHoliday.innerText = text;
-  buttonHoliday.className = 'btn-holiday';
-  divButton[0].appendChild(buttonHoliday);
+  let addButton = document.createElement('button');
+  addButton.innerText = text;
+  addButton.className = text === 'Feriados' ? 'btn-holiday' : 'btn-friday';
+  divButton[0].appendChild(addButton);
 }
 
 createButton('Feriados');
+createButton('Sexta-Feira');
+
+function colorHoliday() {
+  const holidays = document.querySelectorAll('.holiday');
+  let colorSelected = holidays[0].style.backgroundColor === '' ? 'greenyellow' : '';
+  for (let index = 0; index < holidays.length; index += 1) {
+    holidays[index].style.backgroundColor = colorSelected;
+  }
+}
+
+const buttonHoliday = document.querySelector('.btn-holiday');
+buttonHoliday.addEventListener('click', colorHoliday);
