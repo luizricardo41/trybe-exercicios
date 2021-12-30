@@ -6,7 +6,7 @@ _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vi
 
 O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.
 
-### Fundamentos do Desenvolvimento Web :hourglass_flowing_sand:
+### Fundamentos do Desenvolvimento Web :heavy_check_mark:
 
 ##### Bloco 1: Unix & Shell
 
@@ -65,171 +65,181 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 8: Higher Order Functions do JavaScript ES6
 
-- [ ] 8-1: _JavaScript ES6 - Introdução a Higher Order Functions
-- [ ] 8-2: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
-- [ ] 8-3: _JavaScript ES6 - Higher Order Functions - map e filter_
-- [ ] 8-4: _JavaScript ES6 - Higher Order Functions - reduce_
-- [ ] 8-5: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
-- [ ] 8-6: _[Projeto - Zoo functions]()_
+- [x] 8-1: _JavaScript ES6 - Introdução a Higher Order Functions
+- [x] 8-2: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
+- [x] 8-3: _JavaScript ES6 - Higher Order Functions - map e filter_
+- [x] 8-4: _JavaScript ES6 - Higher Order Functions - reduce_
+- [x] 8-5: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
+- [x] 8-6: _[Projeto - Zoo functions]()_
 
-##### Bloco 9: Assíncrono & Promises
+##### Bloco 9: JavaScript e Teste Assíncronos
 
-- [ ] 9-1: _JavaScript Assíncrono e Callbacks_
-- [ ] 9-2: _JavaScript Promises_
-- [ ] 9-3: _[Projeto - Carrinho de Compras]()_
+- [x] 9-1: _JavaScript Assíncrono e Callbacks_
+- [x] 9-2: _JavaScript Assíncrono - Fetch API e async/await_
+- [x] 9-3: _Jest - Testes Assíncronos_
+- [x] 9-4: _[Projeto - Carrinho de Compras]()_
 
-##### Bloco 10: Testes automatizados com Jest
-
-- [ ] 10-1: _Primeiros passos no Jest_
-- [ ] 10-2: _Jest - Testes Assíncronos_
-- [ ] 10-3: _Jest - Simulando comportamentos_
-- [ ] 10-4: _[Projeto - Jest Assíncrono e Mocking]()_
 
 ### Desenvolvimento Front-end :hourglass_flowing_sand:
 
-##### Bloco 11: Introdução à React
+##### Bloco 10: Introdução à React
 
-- [ ] 11-1: _'Hello, world!' no React!_
-- [ ] 11-2: _Componentes React_
-- [ ] 11-3: _[Projeto - Movie Cards Library]()_
+- [x] 10-1: _Introdução - Front-end_
+- [x] 10-1: _Introdução - React_
+- [x] 10-1: _Hello, world!' no React!_
+- [x] 10-2: _Componentes React_
+- [x] 10-3: _[Projeto - Sistema Solar]()_
 
-##### Bloco 12: Componentes com Estado, Eventos e Formulário com React
+##### Bloco 11: Componentes com Estado, Eventos e Formulário com React
 
-- [ ] 12-1: _Componentes com estado e eventos_
-- [ ] 12-2: _Formulários no React_
-- [ ] 12-3: _[Projeto - Movie Cards Library Stateful]()_
+- [x] 11-1: _Componentes com estado e eventos_
+- [x] 11-2: _Formulários no React_
+- [x] 11-3: _[Projeto - Tryunfo]()_
 
-##### Bloco 13: Ciclo de Vida de Componentes e React Router
+##### Bloco 12: Ciclo de Vida de Componentes e React Router
 
-- [ ] 13-1: _Ciclo de vida de componentes em React_
-- [ ] 13-2: _React Router_
-- [ ] 13-3: _[Projeto - Movie Cards Library CRUD]()_
+- [x] 12-1: _Ciclo de vida de componentes em React_
+- [x] 12-2: _React Router_
+- [x] 12-3: _[Projeto - TrybeTunes]()_
 
-##### Bloco 14: Metodologias Ágeis
+##### Bloco 13: Metodologias Ágeis
 
-- [ ] 14-1: _Metodologias Ágeis_
-- [ ] 14-2: _[Projeto - Frontend Online Store]()_
+- [x] 13-1: _Metodologias Ágeis_
+- [x] 13-2: _[Projeto - Frontend Online Store]()_
 
-##### Bloco 15: Testes automatizados com React Testing Library
+##### Bloco 14: Testes automatizados com React Testing Library
 
-- [ ] 15-1: _RTL - Primeiros passos_
-- [ ] 15-2: _RTL - Mocks e Inputs_
-- [ ] 15-3: _RTL - Testando React Router_
-- [ ] 15-4: _[Projeto - Testes em React]()_
+- [x] 14-1: _RTL - Primeiros passos_
+- [x] 14-2: _RTL - Mocks e Inputs_
+- [x] 14-3: _RTL - Testando React Router_
+- [x] 14-4: _[Projeto - Testes em React]()_
 
-##### Bloco 16: Gerenciamento de estado com Redux
+##### Bloco 15: Gerenciamento de estado com Redux
 
-- [ ] 16-1: _Introdução ao Redux_
-- [ ] 16-2: _Usando o Redux no React_
-- [ ] 16-3: _Usando o Redux no React - Prática_
-- [ ] 16-4: _RUsando o Redux no React - Actions Assíncronas_
-- [ ] 16-5: _Testes em React-Redux_
-- [ ] 16-6: _[Projeto - Trybe Wallet]()_
+- [ ] 15-1: _Introdução ao Redux - O estado global da aplicação_
+- [ ] 15-2: _Usando o Redux no React_
+- [ ] 15-3: _Usando o Redux no React - Prática_
+- [ ] 15-4: _Usando o Redux no React - Actions Assíncronas_
+- [ ] 15-5: _Testes em React-Redux_
+- [ ] 15-6: _[Projeto - Trybe Wallet]()_
 
-##### Bloco 17: Projeto Jogo de Trivia
+##### Bloco 16: Projeto Jogo de Trivia
 
-- [ ] 17-1: _[Projeto - Jogo de Trivia]()_
+- [ ] 16-1: _[Projeto - Jogo de Trivia]()_
 
-##### Bloco 18: Context API e React Hooks
+##### Bloco 17: Context API e React Hooks
 
-- [ ] 18-1: _Context API do React_
-- [ ] 18-2: _React Hooks - useState e useContext_
-- [ ] 18-3: _React Hooks - useEffect e Hooks customizados_
-- [ ] 18-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
+- [ ] 17-1: _Context API do React_
+- [ ] 17-2: _React Hooks - useState e useContext_
+- [ ] 17-3: _React Hooks - useEffect e Hooks customizados_
+- [ ] 17-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
 
-##### Bloco 19: Projeto App de Receitas
+##### Bloco 18: Projeto App de Receitas
 
-- [ ] 19-1: _[Projeto - App de Receitas]()_
+- [ ] 18-1: _[Projeto - App de Receitas]()_
 
 ### Desenvolvimento Back-end :hourglass_flowing_sand:
 
+##### Bloco 19: Docker: Utilizando Containers
+
+- [ ] 19-1: _Introdução - Back-end_
+- [ ] 19-1: _Utilizando Containers - Docker_
+- [ ] 19-2: _Manipulação e Criação de Imagens no Docker_
+- [ ] 19-3: _Orquestrando Containers com Docker Compose_
+- [ ] 19-4: _[Projeto - Docker Todo-List]()_
+
 ##### Bloco 20: Introdução à SQL
 
+- [ ] 20-1: _Banco de dados realcionais_
 - [ ] 20-1: _Banco de dados SQL_
 - [ ] 20-2: _Encontrando dados em um banco de dados_
 - [ ] 20-3: _Filtrando dados de forma especí­fica_
 - [ ] 20-4: _Manipulando tabelas_
 - [ ] 20-5: _[Projeto - All For One]()_
 
-##### Bloco 21: Funções SQL, Joins e Subqueries
+##### Bloco 21: Funções SQL, Joins e Normalização
 
 - [ ] 21-1: _Funções mais usadas no SQL_
-- [ ] 21-2: _Descomplicando JOINs, UNIONs e Subqueries_
-- [ ] 21-3: _Stored Routines & Stored Functions_
-- [ ] 21-4: _[Projeto - Vocabulary Booster]()_
+- [ ] 21-2: _Descomplicando JOINs_
+- [ ] 21-3: _Transformando ideias em um modelo de banco de dados_
+- [ ] 21-4: _Aula ao Vivo + [Projeto - One For All]()_
 
-##### Bloco 22: Normalização e Modelagem de Banco de Dados
+##### Bloco 22: Introdução ao desenvolvimento Web com NodeJS
 
-- [ ] 22-1: _Transformando ideias em um modelo de banco de dados_
-- [ ] 22-2: _Normalização, Formas Normais e Dumps_
-- [ ] 22-2: _Transformando ideias em um modelo de banco de dados - Parte 2_
-- [ ] 22-3: _[Projeto - One For All]()_
+- [ ] 22-1: _Node.js - Introdução_
+- [ ] 22-2: _Node.js - Um motor JavaScript_
+- [ ] 22-3: _Node.js - Fluxo Assíncrono_
+- [ ] 22-4: _Mocha, Chai e Sinon - Testes de Back-end com Node.js_
+- [ ] 22-5: _Express - Middlewares_
+- [ ] 22-6: _[Projeto - Talker Manager]()_
 
-##### Bloco 23: Introdução ao MongoDB
+##### Bloco 23: Node.js: Camada de Serviço e Arquitetura Rest e Restful
 
-- [ ] 23-1: _MongoDB - Introdução_
-- [ ] 23-2: _Filter Operators_
-- [ ] 23-3: _[Projeto - Data Flights]()_
+- [ ] 23-1: _Introdução - Arquitetura de Software_
+- [ ] 23-1: _Arquitetura de Software - Camada de Model_
+- [ ] 23-2: _Arquitetura de Software - Camada de Controller e Service_
+- [ ] 23-3: _Arquitetura Web - Rest e Restful_
+- [ ] 23-4: _Arquitetura de Software - Testando as Camadas_
+- [ ] 23-5: _[Projeto - Store Manager]()_
 
-##### Bloco 24: MongoDB: Updates Simples e Complexos
+##### Bloco 24: Node.js: ORM e Autenticação
 
-- [ ] 24-1: _Updates Simples_
-- [ ] 24-2: _Updates Complexos - Arrays - Parte 1_
-- [ ] 24-3: _Updates Complexos - Arrays - Parte 2_
-- [ ] 24-4: _[Projeto - Commerce]()_
+- [ ] 24-1: _Introdução - Node.js: ORM e Autenticação_
+- [ ] 24-1: _ORM - Interface de aplicação com banco de dados_
+- [ ] 24-2: _ORM - Associations_
+- [ ] 24-3: _JWT - (JSON Web Token)_
+- [ ] 24-4: _Testando APIs com Testes de Integração_
+- [ ] 24-5: _[Projeto - API de Blogs]()_
 
-##### Bloco 25: MongoDB Aggregation Framework
+##### Bloco 25: Deployment
 
-- [ ] 25-1: _Aggregation Framework - Part 1_
-- [ ] 25-2: _Aggregation Framework - Part 2_
-- [ ] 25-3: _[Projeto - Aggregations]()_
+- [ ] 25-1: _Introdução - Deploy_
+- [ ] 25-1: _Infraestrutura - Deploy com Heroku_
+- [ ] 25-2: _Deploy - Docker e Heroku_
+- [ ] 25-3: _[Projeto - Stranger Things]()_
 
-##### Bloco 26: Introdução ao desenvolvimento Web com NodeJS
+##### Bloco 26: TypeScript
 
-- [ ] 26-1: _NodeJS - Introdução_
-- [ ] 26-2: _NodeJS - Fluxo Assíncrono_
-- [ ] 26-3: _Testes com NodeJS_
-- [ ] 26-4: _Express: HTTP com Node.js_
-- [ ] 26-5: _Praticando Express_
-- [ ] 26-6: _[Projeto - Talker Manager]()_
+- [ ] 26-1: _Introdução - TypeScript_
+- [ ] 26-1: _Introdução ao TypeScript_
+- [ ] 26-2: _Tipagem Estática e Generics_
+- [ ] 26-3: _Express com TypeScript_
+- [ ] 26-4: _[Projeto - Trybe Smith]()_
 
-##### Bloco 27: NodeJS: Camada de Serviço e Arquitetura Rest e Restful
+##### Bloco 27: Programação Orientada a Objetos(POO) e SOLID
 
-- [ ] 27-1: _Arquitetura de Software - Camada de Model_
-- [ ] 27-2: _Arquitetura de Software - Camada de Controller e Service_
-- [ ] 27-3: _Arquitetura Web - Rest e Restful_
-- [ ] 27-4: _Arquitetura de Software - Testando as Camadas_
-- [ ] 27-5: _[Projeto - Store Manager]()_
+- [ ] 27-1: _Introdução à Orientação a Objetos_
+- [ ] 27-2: _Herança e Interfaces_
+- [ ] 27-3: _Polimorfismo_
+- [ ] 27-4: _SOLID - Introdução_
+- [ ] 27-5: _SOLID - Continuação_
+- [ ] 27-4: _[Projeto - Trybers and Dragons]()_
 
-##### Bloco 28: Autenticação e Upload de Arquivos
+##### Bloco 28: Projeto - TFC - Trybe Futebol Clube
 
-- [ ] 28-1: _NodeJS - JWT - (JSON Web Token)_
-- [ ] 28-2: _NodeJS - Upload de arquivos com Multer_
-- [ ] 28-3: _NodeJS - Testando APIs com Testes de Integração_
-- [ ] 28-4: _[Projeto - Cookmaster V2]()_
+- [ ] 28-1: _[Projeto - TFC - Trybe Futebol Clube]()_
 
-##### Bloco 29: Deployment
+##### Bloco 29: Introdução ao MongoDB
 
-- [ ] 29-1: _Infraestrutura - Deploy com Heroku_
-- [ ] 29-2: _Deploy - Gerenciadores de Processos_
-- [ ] 29-3: _[Projeto - Stranger Things]()_
+- [ ] 29-1: _Introdução - NoSQL_
+- [ ] 29-1: _MongoDB - Introdução_
+- [ ] 29-2: _Filter Operators_
+- [ ] 29-3: _[Projeto - Data Flights]()_
 
-##### Bloco 30: Arquitetura: SOLID e ORM
 
-- [ ] 30-1: _Arquitetura - Principios SOLID_
-- [ ] 30-2: _ORM - Interface da aplicações com o banco de dados_
-- [ ] 30-3: _ORM - Associations_
-- [ ] 30-3: _[Projeto - API de Blogs]()_
+##### Bloco 30: MongoDB: Updates Simples e Complexos
 
-##### Bloco 31: Sockets
+- [ ] 30-1: _Updates Simples_
+- [ ] 30-2: _Updates Complexos - Parte 1_
+- [ ] 30-3: _Updates Complexos - Parte 2_
+- [ ] 30-3: _[Projeto - Commerce]()_
 
-- [ ] 31-1: _Arquitetura de Software - Camada de View_
-- [ ] 31-2: _Sockets - TCP/UDP & NET_
-- [ ] 31-3: _Sockets - Socket.io_
-- [ ] 31-4: _Sockets - Praticando Socket.io_
-- [ ] 31-5: _[Projeto - Webchat]()_
+##### Bloco 31: MasterClass - VPS, CI/CD
 
-##### Bloco 32: Projeto
+- [ ] 31-1: _Dia 1_
+- [ ] 31-2: _Dia 2_
+
+##### Bloco 32: Projeto - App de Delivery
 
 - [ ] 32-1: _[Projeto - App de Delivery]()_
 
@@ -237,6 +247,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 33: Introdução à Python
 
+- [ ] 33-1: _Introdução - Ciência da Computação_
 - [ ] 33-1: _Aprendendo Python_
 - [ ] 33-2: _Entrada e Saí­da de dados_
 - [ ] 33-3: _Testes_
@@ -273,9 +284,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 38: Estrutura de Dados II: Listas, Filas e Pilhas
 
-- [ ] 37-1: _Nó e Listas Encadeadas_
-- [ ] 37-2: _Deque_
-- [ ] 37-3: _Pilhas_
-- [ ] 37-4: _[Projeto - TING - Trybe Is Not Google]()_
+- [ ] 38-1: _Nó e Listas Encadeadas_
+- [ ] 38-2: _Deque_
+- [ ] 38-3: _Pilhas_
+- [ ] 38-4: _[Projeto - TING - Trybe Is Not Google]()_
 
 # [...]
