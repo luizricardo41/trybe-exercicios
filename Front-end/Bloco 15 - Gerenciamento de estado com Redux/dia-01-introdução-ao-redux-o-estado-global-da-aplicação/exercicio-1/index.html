@@ -38,7 +38,16 @@
         index: 0,
       };
 
-      const reducer = (state = ESTADO_INICIAL) => {
+      const nextColor = () => ({
+        type: "NEXT_COLOR",
+        index: index += 1,
+      });
+
+      const reducer = (state = ESTADO_INICIAL, action) => {
+        switch (action.type) {
+          case 'NEXT_COLOR':
+          
+        }
         return state;
       }
 
