@@ -43,12 +43,12 @@
           case 'NEXT_COLOR':
             return {
             ...state,
-            index: state.index === state.colors.length ? 0 : state.index += 1,         
+            index: state.index === state.colors.length - 1 ? 0 : state.index += 1,         
             }
             case 'PREVIOUS_COLOR':
             return {
             ...state,
-            index: state.index === 0 ? state.colors.length : state.index -= 1,         
+            index: state.index === 0 ? state.colors.length - 1 : state.index -= 1,         
             }
           default:
             return state;
@@ -58,14 +58,31 @@
 
       const store = Redux.createStore(reducer);
 
-      const nextColor = () => store.dispatch({type: "NEXT_COLOR"});
+      const nextColor = () => {
+        store.dispatch({type: "NEXT_COLOR"});
+        // const colorCurrent = store.getState().colors;
+        // const indexCurrent = store.getState().index;
+        // document.getElementById('value').innerText = colorCurrent[indexCurrent];
+        // document.getElementById('container').style.backgroundColor = colorCurrent[indexCurrent];
+      };
 
-      const previousColor = () => store.dispatch({type: "PREVIOUS_COLOR"});
+      const previousColor = () => {
+        store.dispatch({type: "PREVIOUS_COLOR"})
+        // const colorCurrent = store.getState().colors;
+        // const indexCurrent = store.getState().index;
+        // document.getElementById('value').innerText = colorCurrent[indexCurrent];
+        // document.getElementById('container').style.backgroundColor = colorCurrent[indexCurrent];
+      };
   
-      
-
       document.querySelector('#previous').addEventListener('click', previousColor);
       document.querySelector('#next').addEventListener('click', nextColor);
+
+      store.subscribe(() => {
+        const { colors, index } = store.getState();
+        document.getElementById('value').innerText = colors[index];
+        document.getElementById('container').style.backgroundColor = colors[index];
+      })
+
     </script>
   </body>
 </html>
