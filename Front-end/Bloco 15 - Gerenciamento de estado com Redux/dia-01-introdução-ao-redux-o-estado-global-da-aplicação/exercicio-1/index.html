@@ -38,22 +38,34 @@
         index: 0,
       };
 
-      const nextColor = () => ({
-        type: "NEXT_COLOR",
-        index: index += 1,
-      });
-
       const reducer = (state = ESTADO_INICIAL, action) => {
         switch (action.type) {
           case 'NEXT_COLOR':
-          
+            return {
+            ...state,
+            index: state.index === state.colors.length ? 0 : state.index += 1,         
+            }
+            case 'PREVIOUS_COLOR':
+            return {
+            ...state,
+            index: state.index === 0 ? state.colors.length : state.index -= 1,         
+            }
+          default:
+            return state;
         }
-        return state;
+        
       }
 
       const store = Redux.createStore(reducer);
 
+      const nextColor = () => store.dispatch({type: "NEXT_COLOR"});
 
+      const previousColor = () => store.dispatch({type: "PREVIOUS_COLOR"});
+  
+      
+
+      document.querySelector('#previous').addEventListener('click', previousColor);
+      document.querySelector('#next').addEventListener('click', nextColor);
     </script>
   </body>
 </html>
