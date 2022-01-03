@@ -42,17 +42,15 @@
             <input type="text" maxlength="28" required id="cidade">
           </div> 
         </label>
-        <label for="select-state">Estado:
+        <label for="select-state" id="Estado">Estado:
           <div class="">
-            <select name="estado" id="select-state" required></select>
+            <select name="estado" id="select-state" class="state" required></select>
           </div> 
         </label>
       </div><br>
       <div>
         <p id="moradia">Tipo de moradia:</p>
-        <label for="tipo-casa">Casa
-          <input type="radio" required id="tipo-casa" name="tipo-moradia" value="Casa" checked class="radio">
-        </label>
+        <label for="tipo-casa">Casa<input type="radio" required id="tipo-casa" name="tipo-moradia" value='Casa' checked class="radio"></label>
         <label for="tipo-ap">Apartamento
           <input type="radio" required id="tipo-ap" name="tipo-moradia" value="Apartamento" class="radio">
         </label>
