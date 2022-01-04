@@ -31,6 +31,7 @@
       <p>Color: <span id="value">white</span></p>
       <button id="previous">Previous color</button>
       <button id="next">Next color</button>
+      <button id="random">Random color</button>
     </div>
     <script>    
       const ESTADO_INICIAL = {
@@ -50,38 +51,56 @@
             ...state,
             index: state.index === 0 ? state.colors.length - 1 : state.index -= 1,         
             }
+            case 'RANDOM_COLOR':
+              const { colors } = state;
+              colors.push(action.color);
+            return {
+            ...state,
+            colors,
+            index: state.colors.length - 1,
+            }
           default:
             return state;
         }
-        
       }
 
       const store = Redux.createStore(reducer);
 
       const nextColor = () => {
         store.dispatch({type: "NEXT_COLOR"});
-        // const colorCurrent = store.getState().colors;
-        // const indexCurrent = store.getState().index;
-        // document.getElementById('value').innerText = colorCurrent[indexCurrent];
-        // document.getElementById('container').style.backgroundColor = colorCurrent[indexCurrent];
       };
 
       const previousColor = () => {
         store.dispatch({type: "PREVIOUS_COLOR"})
-        // const colorCurrent = store.getState().colors;
-        // const indexCurrent = store.getState().index;
-        // document.getElementById('value').innerText = colorCurrent[indexCurrent];
-        // document.getElementById('container').style.backgroundColor = colorCurrent[indexCurrent];
+      };
+
+      const randomColor = () => {
+        const color = criarCor();
+        store.dispatch({
+          type: "RANDOM_COLOR",
+          color,
+        })
       };
   
       document.querySelector('#previous').addEventListener('click', previousColor);
       document.querySelector('#next').addEventListener('click', nextColor);
+      document.querySelector('#random').addEventListener('click', randomColor);
 
       store.subscribe(() => {
         const { colors, index } = store.getState();
         document.getElementById('value').innerText = colors[index];
         document.getElementById('container').style.backgroundColor = colors[index];
       })
+
+      function criarCor() {
+        const oneChar = ['1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'];
+        let cor = '#';
+        const aleatorio = () => Math.floor(Math.random() * oneChar.length);
+        for (let i = 0; i < 6; i += 1) {
+          cor += oneChar[aleatorio()];
+        }
+        return cor;
+      }
 
     </script>
   </body>
