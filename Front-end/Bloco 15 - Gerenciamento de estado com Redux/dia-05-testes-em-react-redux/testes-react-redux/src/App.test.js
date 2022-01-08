@@ -7,8 +7,7 @@ import clickReducer from './redux/reducers';
 
 const renderWithRedux = (
   component,
-  { initialState, store = createStore(combineReducers({ clickReducer }), initialState) } = {}
-) => {
+  { initialState, store = createStore(combineReducers({ clickReducer }), initialState) } = {}) => {
     return {
       ...render(<Provider store={store}>{component}</Provider>),
       store,
@@ -25,9 +24,12 @@ describe('testing clicks', () => {
     expect(buttonAdicionar).toBeInTheDocument();
     expect(queryByText('0')).toBeInTheDocument();
   })
-  const { queryByText } = renderWithRedux(<App />, { initialState: { clickReducer: { counter: 5 }}});
+
+  
   
   test('a click in a button should increment the value of clicks', () => {
+
+    const { queryByText } = renderWithRedux(<App />, { initialState: { clickReducer: { counter: 5 } } });
 
     expect(queryByText('5')).toBeInTheDocument();
   });
