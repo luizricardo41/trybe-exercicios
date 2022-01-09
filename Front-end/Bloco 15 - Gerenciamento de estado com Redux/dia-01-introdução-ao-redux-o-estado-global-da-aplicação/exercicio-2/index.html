@@ -90,10 +90,18 @@
 
       const store = Redux.createStore(rootReducer);
 
-      // store.dispatch(actionTwo());
-
       console.log(store.getState()); // verificação de store criada;
 
+      window.onload = () => {
+        setTimeout(() => {
+          store.dispatch(actionOne());
+          console.log(store.getState()); // verificação de store modificada - 1ºreducer;
+        }, 3000);
+        setTimeout(() => {
+          store.dispatch(actionTwo());
+          console.log(store.getState()); // verificação de store modificada - 2ºreducer;
+        }, 5000);
+      }
     </script>
   </body>
 </html>
