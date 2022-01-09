@@ -22,8 +22,6 @@
       <p>Cidade: <span id="cidade-2">São Paulo</span></p>
     </div>
     <script>
-      // const combineReducers = require('redux');
-
       const ESTADO_INICIAL_1 = {
         nome: 'Rodrigo',
         sobrenome: 'Santos da Silva',
@@ -38,8 +36,34 @@
         cidade: 'São Paulo',
       };
 
+      const NOVO_ESTADO_1 = 'NOVO_ESTADO_1';
+      const NOVO_ESTADO_2 = 'NOVO_ESTADO_2';
+
+      const actionOne = () => ({
+        type: NOVO_ESTADO_1,
+        nome: 'Luiz Ricardo',
+        sobrenome: 'Fernandes',
+        endereco: 'Rua Tomaz Aquino, 287',
+        cidade: 'Itapeva',
+      });
+
+      const actionTwo = () => ({
+        type: NOVO_ESTADO_2,
+        nome: 'Artur',
+        sobrenome: 'Fernandes',
+        endereco: 'Rua Higino Marques, 87',
+        cidade: 'Itapeva',
+      });
+
       const meuPrimeiroReducer = (state = ESTADO_INICIAL_1, action) => {
         switch (action.type) {
+          case NOVO_ESTADO_1:
+            return {
+              nome: action.nome,
+              sobrenome: action.sobrenome,
+              endereco: action.endereco,
+              cidade: action.cidade,
+            };
           default:
             return state;
         }
@@ -47,6 +71,13 @@
 
       const meuSegundoReducer = (state = ESTADO_INICIAL_2, action) => {
         switch (action.type) {
+          case NOVO_ESTADO_2:
+            return {
+              nome: action.nome,
+              sobrenome: action.sobrenome,
+              endereco: action.endereco,
+              cidade: action.cidade,
+            };
           default:
             return state;
         }
@@ -57,7 +88,37 @@
         meuSegundoReducer,
       });
 
-      console.log(rootReducer);
+      const store = Redux.createStore(rootReducer);
+
+      console.log(store.getState()); // verificação de store criada;
+
+      window.onload = () => {
+        setTimeout(() => {
+          store.dispatch(actionOne());
+          console.log(store.getState()); // verificação de store modificada - 1ºreducer;
+        }, 3000);
+        
+        setTimeout(() => {
+          store.dispatch(actionTwo());
+          console.log(store.getState()); // verificação de store modificada - 2ºreducer;
+        }, 5000);
+      }
+      
+      store.subscribe(() => {
+        const {nome, sobrenome, endereco, cidade} = store.getState().meuPrimeiroReducer;
+        document.getElementById('nome-1').innerText = nome;
+        document.getElementById('sobrenome-1').innerText = sobrenome;
+        document.getElementById('endereco-1').innerText = endereco;
+        document.getElementById('cidade-1').innerText = cidade;
+      });
+
+      store.subscribe(() => {
+            const {nome, sobrenome, endereco, cidade} = store.getState().meuSegundoReducer;
+            document.getElementById('nome-2').innerText = nome;
+            document.getElementById('sobrenome-2').innerText = sobrenome;
+            document.getElementById('endereco-2').innerText = endereco;
+            document.getElementById('cidade-2').innerText = cidade;
+          });
 
     </script>
   </body>
