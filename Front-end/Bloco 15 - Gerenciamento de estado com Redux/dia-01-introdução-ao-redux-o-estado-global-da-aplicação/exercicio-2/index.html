@@ -97,11 +97,29 @@
           store.dispatch(actionOne());
           console.log(store.getState()); // verificação de store modificada - 1ºreducer;
         }, 3000);
+        
         setTimeout(() => {
           store.dispatch(actionTwo());
           console.log(store.getState()); // verificação de store modificada - 2ºreducer;
         }, 5000);
       }
+      
+      store.subscribe(() => {
+        const {nome, sobrenome, endereco, cidade} = store.getState().meuPrimeiroReducer;
+        document.getElementById('nome-1').innerText = nome;
+        document.getElementById('sobrenome-1').innerText = sobrenome;
+        document.getElementById('endereco-1').innerText = endereco;
+        document.getElementById('cidade-1').innerText = cidade;
+      });
+
+      store.subscribe(() => {
+            const {nome, sobrenome, endereco, cidade} = store.getState().meuSegundoReducer;
+            document.getElementById('nome-2').innerText = nome;
+            document.getElementById('sobrenome-2').innerText = sobrenome;
+            document.getElementById('endereco-2').innerText = endereco;
+            document.getElementById('cidade-2').innerText = cidade;
+          });
+
     </script>
   </body>
 </html>
