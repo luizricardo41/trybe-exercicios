@@ -2,52 +2,44 @@ import { useEffect, useState } from 'react';
 import './App.css';
 
 function App() {
-  const [num, setNum] = useState(0);
-  const [msg, setMsg] = useState('');
+  const [num, setNum] = useState([]);
+  const [multiple, setMultiple] = useState(false);
   let [timer, setTimer] = useState(10);
-  const ramdomNum = () => {
-    const num = Math.floor(Math.random() * (100)) + 1;
-    setNum(num);
-    if (num % 3 === 0 || num % 5 === 0) {
-      setMsg('Acerto')
-    } else {
-      setMsg('');
-    }
+
+  const decrementTimer = () => {
+    setTimer(timer => timer - 1)
   }
 
-  const playTimer = () => {
-    if (timer > 0) {
-      setTimer(timer => timer - 1)
-    } else {
+  const verifyNumber = (num) => {
+    if (num % 3 === 0 || num % 5 === 0) {
+      setMultiple(true)
+      setTimeout(() => setMultiple(false), 4000)
+    } 
+  }
+
+  useEffect(() => {
+    const ramdomNum = () => {
+      const num = Math.floor(Math.random() * (100)) + 1;
+      verifyNumber(num);
+      setNum(num);
       setTimer(10);
     }
-  }
+    const intervalNumber = setInterval(ramdomNum, 10000);
+    const intervalTimer = setInterval(decrementTimer, 1000);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      playTimer()
-    }, 1000);
     return () => {
-      clearInterval(interval);
-    }
-  })
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      ramdomNum()
-    }, 10000);
-    return () => {
-      clearInterval(interval);
-    }
-  }, [])
+      clearInterval(intervalNumber);
+      clearInterval(intervalTimer);
+    };
+  }, []);
 
   return (
     <div>
-      {timer} <br/>
+      <p>Tempo:{' '}{timer}</p>
       {' '}
-      {num} <br/>
+      <p>Número aleatório:{' '}{num}</p>
       {' '}
-      {msg !== '' && msg}
+      {multiple && 'Acerto'}
     </div>
   );
 }
