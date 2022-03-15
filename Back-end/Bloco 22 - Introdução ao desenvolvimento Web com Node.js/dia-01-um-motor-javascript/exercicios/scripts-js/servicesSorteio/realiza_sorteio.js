@@ -7,7 +7,7 @@ const checkNumber = () => {
   if (data.sortNumber === data.choseNumber) {
     console.log('Parabéns, número correto!')
   } else {
-    console.log(`Opa, não foi dessa vez. O numero sorteado era ${sortNumber}!`);
+    console.log(`Opa, não foi dessa vez. O numero sorteado era ${data.sortNumber}!`);
   }
 }
 
