@@ -1,5 +1,4 @@
-const readline = require('readline-sync');
-const velocidade = require('./velocidade')
+const readline = require('readline-sync')
 
 let data = {
   distancia: 0,
