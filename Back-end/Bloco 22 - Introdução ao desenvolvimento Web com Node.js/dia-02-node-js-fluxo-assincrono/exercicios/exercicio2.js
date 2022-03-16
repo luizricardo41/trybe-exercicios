@@ -20,3 +20,5 @@ const c = Math.floor(Math.random() * 100 + 1);
 testPromise(a, b, c)
   .then((result) => console.log(`((${a} + ${b}) * ${c})=${result}`))
   .catch(err => console.log('erro:', err.message))
+
+module.exports = testPromise;
