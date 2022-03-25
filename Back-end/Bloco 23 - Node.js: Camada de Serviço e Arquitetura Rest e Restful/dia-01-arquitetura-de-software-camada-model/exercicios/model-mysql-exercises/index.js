@@ -9,6 +9,12 @@ app.use(bodyParser.json());
 
 const port = 3000;
 
+app.get('/user', async (req, res) => {
+  const users = await Users.getUser();
+
+  res.status(200).json(users);
+})
+
 app.post('/user', async (req, res) => {
   const { first_name, last_name, email, password } = req.body;
 
