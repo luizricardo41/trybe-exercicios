@@ -56,9 +56,31 @@ const findByID = async (id) => {
   return users;
 }
 
+const updateUser = async ({id, first_name, last_name, email, password}) => {
+  const [{ affectedRows }] = await connection
+    .execute(`UPDATE data_users.user 
+    SET first_name = ?, last_name = ?, email = ?, password = ? WHERE id = ?`,
+      [first_name, last_name, email, password, id]);
+
+  if (affectedRows === 0) {
+    return {
+      error: true,
+      message: 'Usuário não encontrado'
+    }
+  }
+  return {
+    id,
+    first_name,
+    last_name,
+    email,
+    password
+  }
+}
+
 module.exports = {
   validation,
   createUser,
   getUser,
-  findByID
+  findByID,
+  updateUser
 };
