@@ -45,7 +45,14 @@ const createUser = async ({ first_name, last_name, email, password }) => {
   };
 }
 
+
+const getUser = async () => {
+  const [users] = await connection.execute('SELECT * FROM data_users.user');
+  return users;
+}
+
 module.exports = {
   validation,
-  createUser
+  createUser,
+  getUser
 };
