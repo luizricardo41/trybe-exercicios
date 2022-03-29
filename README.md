@@ -61,7 +61,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
 - [x] 7-2: _JavaScript ES6 - Objects_
 - [x] 7-3: _Testes unitários em JavaScript_
-- [ ] 7-4: _[Projeto - JavaScript Testes Unitários]()_
+- [x] 7-4: _[Projeto - JavaScript Testes Unitários]()_
 
 ##### Bloco 8: Higher Order Functions do JavaScript ES6
 
@@ -80,7 +80,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 9-4: _[Projeto - Carrinho de Compras]()_
 
 
-### Desenvolvimento Front-end :hourglass_flowing_sand:
+### Desenvolvimento Front-end ✔️:
 
 ##### Bloco 10: Introdução à React
 
@@ -116,69 +116,69 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 15: Gerenciamento de estado com Redux
 
-- [ ] 15-1: _Introdução ao Redux - O estado global da aplicação_
-- [ ] 15-2: _Usando o Redux no React_
-- [ ] 15-3: _Usando o Redux no React - Prática_
-- [ ] 15-4: _Usando o Redux no React - Actions Assíncronas_
-- [ ] 15-5: _Testes em React-Redux_
-- [ ] 15-6: _[Projeto - Trybe Wallet]()_
+- [x] 15-1: _Introdução ao Redux - O estado global da aplicação_
+- [x] 15-2: _Usando o Redux no React_
+- [x] 15-3: _Usando o Redux no React - Prática_
+- [x] 15-4: _Usando o Redux no React - Actions Assíncronas_
+- [x] 15-5: _Testes em React-Redux_
+- [x] 15-6: _[Projeto - Trybe Wallet]()_
 
 ##### Bloco 16: Projeto Jogo de Trivia
 
-- [ ] 16-1: _[Projeto - Jogo de Trivia]()_
+- [x] 16-1: _[Projeto - Jogo de Trivia]()_
 
 ##### Bloco 17: Context API e React Hooks
 
-- [ ] 17-1: _Context API do React_
-- [ ] 17-2: _React Hooks - useState e useContext_
-- [ ] 17-3: _React Hooks - useEffect e Hooks customizados_
-- [ ] 17-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
+- [x] 17-1: _Context API do React_
+- [x] 17-2: _React Hooks - useState e useContext_
+- [x] 17-3: _React Hooks - useEffect e Hooks customizados_
+- [x] 17-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
 
 ##### Bloco 18: Projeto App de Receitas
 
-- [ ] 18-1: _[Projeto - App de Receitas]()_
+- [x] 18-1: _[Projeto - App de Receitas]()_
 
 ### Desenvolvimento Back-end :hourglass_flowing_sand:
 
 ##### Bloco 19: Docker: Utilizando Containers
 
-- [ ] 19-1: _Introdução - Back-end_
-- [ ] 19-1: _Utilizando Containers - Docker_
-- [ ] 19-2: _Manipulação e Criação de Imagens no Docker_
-- [ ] 19-3: _Orquestrando Containers com Docker Compose_
-- [ ] 19-4: _[Projeto - Docker Todo-List]()_
+- [x] 19-1: _Introdução - Back-end_
+- [x] 19-1: _Utilizando Containers - Docker_
+- [x] 19-2: _Manipulação e Criação de Imagens no Docker_
+- [x] 19-3: _Orquestrando Containers com Docker Compose_
+- [x] 19-4: _[Projeto - Docker Todo-List]()_
 
 ##### Bloco 20: Introdução à SQL
 
-- [ ] 20-1: _Banco de dados realcionais_
-- [ ] 20-1: _Banco de dados SQL_
-- [ ] 20-2: _Encontrando dados em um banco de dados_
-- [ ] 20-3: _Filtrando dados de forma especí­fica_
-- [ ] 20-4: _Manipulando tabelas_
-- [ ] 20-5: _[Projeto - All For One]()_
+- [x] 20-1: _Banco de dados realcionais_
+- [x] 20-1: _Banco de dados SQL_
+- [x] 20-2: _Encontrando dados em um banco de dados_
+- [x] 20-3: _Filtrando dados de forma especí­fica_
+- [x] 20-4: _Manipulando tabelas_
+- [x] 20-5: _[Projeto - All For One]()_
 
 ##### Bloco 21: Funções SQL, Joins e Normalização
 
-- [ ] 21-1: _Funções mais usadas no SQL_
-- [ ] 21-2: _Descomplicando JOINs_
-- [ ] 21-3: _Transformando ideias em um modelo de banco de dados_
-- [ ] 21-4: _Aula ao Vivo + [Projeto - One For All]()_
+- [x] 21-1: _Funções mais usadas no SQL_
+- [x] 21-2: _Descomplicando JOINs_
+- [x] 21-3: _Transformando ideias em um modelo de banco de dados_
+- [x] 21-4: _Aula ao Vivo + [Projeto - One For All]()_
 
 ##### Bloco 22: Introdução ao desenvolvimento Web com NodeJS
 
-- [ ] 22-1: _Node.js - Introdução_
-- [ ] 22-2: _Node.js - Um motor JavaScript_
-- [ ] 22-3: _Node.js - Fluxo Assíncrono_
-- [ ] 22-4: _Mocha, Chai e Sinon - Testes de Back-end com Node.js_
-- [ ] 22-5: _Express - Middlewares_
-- [ ] 22-6: _[Projeto - Talker Manager]()_
+- [x] 22-1: _Node.js - Introdução_
+- [x] 22-2: _Node.js - Um motor JavaScript_
+- [x] 22-3: _Node.js - Fluxo Assíncrono_
+- [x] 22-4: _Mocha, Chai e Sinon - Testes de Back-end com Node.js_
+- [x] 22-5: _Express - Middlewares_
+- [x] 22-6: _[Projeto - Talker Manager]()_
 
 ##### Bloco 23: Node.js: Camada de Serviço e Arquitetura Rest e Restful
 
-- [ ] 23-1: _Introdução - Arquitetura de Software_
-- [ ] 23-1: _Arquitetura de Software - Camada de Model_
-- [ ] 23-2: _Arquitetura de Software - Camada de Controller e Service_
-- [ ] 23-3: _Arquitetura Web - Rest e Restful_
+- [x] 23-1: _Introdução - Arquitetura de Software_
+- [x] 23-1: _Arquitetura de Software - Camada de Model_
+- [x] 23-2: _Arquitetura de Software - Camada de Controller e Service_
+- [x] 23-3: _Arquitetura Web - Rest e Restful_
 - [ ] 23-4: _Arquitetura de Software - Testando as Camadas_
 - [ ] 23-5: _[Projeto - Store Manager]()_
 
