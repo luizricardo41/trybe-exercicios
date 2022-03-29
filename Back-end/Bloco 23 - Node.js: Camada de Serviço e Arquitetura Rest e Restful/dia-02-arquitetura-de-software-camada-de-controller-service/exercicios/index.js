@@ -13,6 +13,8 @@ app.get('/ping', (req, res) => {
   res.status(200).json({ message: "pong!" });
 });
 
-app.get('/cep/:cep', Controller.receiveCep);
+app.get('/cep/:cep', Controller.getCep);
+
+app.post('/cep', Controller.addCep);
 
 app.listen(PORT, () => console.log('App listening on port: ' + PORT));
