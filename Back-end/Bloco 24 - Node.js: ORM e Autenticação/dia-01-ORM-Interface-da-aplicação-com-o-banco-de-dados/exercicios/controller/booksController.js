@@ -25,7 +25,20 @@ const getById = async (req, res) => {
   }
 };
 
+const createBook = async (req, res) => {
+  try {
+    const { title, author, pageQuantity } = req.body;
+    const newBook = await ServiceBooks.createBook({title, author, pageQuantity});
+    res.status(201).json({ newBook, message: 'Livro criado com sucesso' });
+  }
+  catch (e) {
+    console.log(e.message);
+    res.status(500).json({message: 'Algo deu errado'})
+  }
+};
+
 module.exports = {
   getAll,
   getById,
+  createBook,
 }
