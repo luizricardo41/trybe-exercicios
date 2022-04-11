@@ -50,9 +50,23 @@ const updateBook = async (req, res) => {
   }
 };
 
+const deleteBook = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const delBook = await ServiceBooks.deleteBook(id);
+    console.log(delBook);
+    res.status(204).json(delBook);
+  }
+  catch (e) {
+    console.log(e.message);
+    res.status(500).json({ message: 'Algo deu errado' });
+  };
+};
+
 module.exports = {
   getAll,
   getById,
   createBook,
   updateBook,
-}
+  deleteBook,
+};
