@@ -13,6 +13,8 @@ app.get('/books/:id', BooksController.getById);
 
 app.post('/books', BooksController.createBook);
 
-app.post('/books/:id', BooksController.updateBook)
+app.post('/books/:id', BooksController.updateBook);
+
+app.delete('/books/:id', BooksController.deleteBook);
 
 app.listen(3000, () => console.log('Listening on port 3000'));
