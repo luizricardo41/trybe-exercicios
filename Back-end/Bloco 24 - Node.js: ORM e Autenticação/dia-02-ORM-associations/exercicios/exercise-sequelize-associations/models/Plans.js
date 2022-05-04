@@ -5,7 +5,7 @@ module.exports = (sequelize, DataTypes) => {
     price: DataTypes.DOUBLE,
   }, {
     timestamps: false,
-    tableNa,e: 'Plans',
+    tableName: 'Plans',
     underscored: true,
   });
 
