@@ -2,7 +2,7 @@
 {
   "compilerOptions": {
     "module": "commonjs",
-    "target": "es5",
+    "target": "es6",
     "lib": ["es6", "ES2015.Iterable"],
     "rootDir": "./",
     "outDir": "./dist",
